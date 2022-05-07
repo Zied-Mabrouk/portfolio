@@ -3,8 +3,8 @@ import "./ButtonSVG.css";
 
 const ButtonSVG = (props) => {
   return (
-    <a href="#" className="btn-track">
-      {props.type == "download" && (
+    <a href="#damn" className="btn-track">
+      {props.type === "download" && (
         <div className="--icon">
           <div className="circle-inner"></div>
           <div className="circle-outer"></div>
