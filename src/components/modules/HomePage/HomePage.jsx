@@ -1,6 +1,6 @@
 import React from "react";
 import ButtonSVG from "../../cores/Button/ButtonSVG";
-import "./HomePage.css";
+import "./HomePage.scss";
 
 const HomePage = () => {
   return (

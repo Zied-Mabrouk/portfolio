@@ -1,5 +1,5 @@
 import React from "react";
-import "./ButtonSVG.css";
+import "./ButtonSVG.scss";
 
 const ButtonSVG = (props) => {
   return (
