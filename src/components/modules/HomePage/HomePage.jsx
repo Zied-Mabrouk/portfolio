@@ -14,12 +14,7 @@ const HomePage = () => {
           <ButtonSVG content="Contact me" type="contact" />
         </div>
       </div>
-      <div className="home-me">
-        <div className="home-me-container">
-          <img src="../assets/img/me1.png" alt="hey" />
-          <div className="home-light"></div>
-        </div>
-      </div>
+      
     </section>
   );
 };
