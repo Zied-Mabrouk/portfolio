@@ -1,6 +1,6 @@
 import "./About.scss";
 import React from "react";
-import Triangle from "../../Triangle/Triangle";
+import Triangle from "../../cores/Triangle/Triangle";
 
 const About = () => {
   return (
