@@ -1,0 +1,14 @@
+.progressbar {
+  width:80%;
+  background-color: #f1f5f8;
+  height: 40px;
+  border-radius: 30px;
+
+  .level {
+    border-radius: 30px;
+    width: 60%;
+    height: 100%;
+    background-color: var(--color-primary);
+    box-shadow: 0 0 10px var(--color-primary);
+  }
+}

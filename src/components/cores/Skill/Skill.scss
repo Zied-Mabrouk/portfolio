@@ -1,0 +1,39 @@
+.skill {
+  display: flex;
+  align-items: center;
+
+  .desc {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: flex-start;
+    gap: 64px;
+    span{
+      display: flex;
+      justify-content: center;
+      width: 150px;
+    img {
+      max-height: 50px;
+      max-width: 90px;
+      min-width: 40px;
+    }
+      
+  }
+    p {
+      color: var(--color-bg);
+      font-size: 25px;
+      font-weight: 500;
+    }
+  }
+  .levelbar {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    span{
+      color: var(--color-primary-dark);
+      font-size: 25px;
+      font-weight: 900;
+    }
+  }
+}

@@ -4,6 +4,7 @@ import NavBar from "./components/modules/NavBar/NavBar";
 
 import "./App.css";
 import About from "./components/modules/About/About";
+import Expertise from "./components/modules/Expertise/Expertise";
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <NavBar />
       <HomePage />
       <About/>
+      <Expertise/>
     </>
   );
 }
