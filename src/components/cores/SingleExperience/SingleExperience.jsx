@@ -1,0 +1,48 @@
+import React from "react";
+import "./SingleExperience.scss";
+import { TiTick } from "react-icons/ti";
+
+const SingleExperience = (props) => {
+  let reversed = props.reverse;
+  return (
+    <div className="singleExperience" style={{ flexDirection:reversed ? "row-reverse" : "row" } }>
+      <div className={reversed ? "desc reversed-desc" : "desc"}>
+        <h1
+          style={{ textAlign: reversed ? "left" : "right" }}
+        >
+          {props.title}
+        </h1>
+
+        <h2
+          style={{ textAlign: reversed ? "left" : "right" }}
+        >
+          {props.subtitle}
+        </h2>
+        <p
+          style={{ textAlign: reversed ? "left" : "right" }}
+        >
+          {props.text}
+        </p>
+      </div>
+      <div className="line">
+        <div>
+          <TiTick />
+        </div>
+      </div>
+      <div
+        className="date"
+        style={reversed ? { paddingRight: "48px" } : { paddingLeft: "48px" }}
+      >
+        <div className="bubble">
+          <div className={reversed ? "arrow reversed-arrow" : "arrow"}></div>
+          <h2>
+            {props.timeStart} - <span>{props.timeEnd}</span>
+          </h2>
+          <div className="body"></div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default SingleExperience;

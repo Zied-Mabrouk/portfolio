@@ -4,23 +4,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  h2 {
-    color: var(--color-dark);
-    text-transform: uppercase;
-    font-weight: 100;
-    letter-spacing: 4px;
-  }
-  .expertise-title {
-    color: var(--color-bg);
-    font-family: Montserrat, sans-serif;
-    font-size: 64px;
-    margin-block: 16px;
-  }
+  height: 100vh;
+  justify-content: center;
+  
   .expertise-skills {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    margin-top: 96px;
+    margin-top: 64px;
     max-width: 1200px;
     width: 70%;
   }

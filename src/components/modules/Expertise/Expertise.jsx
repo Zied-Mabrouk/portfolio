@@ -4,9 +4,9 @@ import "./Expertise.scss";
 
 const Expertise = () => {
   return (
-    <div className='expertise'>
-        <h2>my skills</h2>
-        <h1 className='expertise-title'>My Expertise</h1>
+    <div className='expertise' id="expertise">
+        <h2 className='sec-title'>my skills</h2>
+        <h1 className='main-title'>My Expertise</h1>
         <div className='expertise-skills'>
             <Skill level={70} title={"Javascript"} img="Javascript.svg"/>
             <Skill level={100} title={"Java"} img="Java.svg"/>
