@@ -19,16 +19,13 @@ const SingleExperience = (props) => {
           {props.subtitle}
         </h2>
         <p style={{ textAlign: reversed ? "left" : "right" }}>
-          {
-            text.split("<b>").map((item, key) => {
-             if(key && key%2===1)
-             {
-              return(<b>{item}</b>)
-             }
-              return item;
-          })
-          }
-          </p>
+          {text.split("<b>").map((item, key) => {
+            if (key && key % 2 === 1) {
+              return <b>{item}</b>;
+            }
+            return item;
+          })}
+        </p>
       </div>
       <div className="line">
         <div className="outer">
@@ -48,6 +45,16 @@ const SingleExperience = (props) => {
           </h2>
           <div className="body"></div>
         </div>
+        {props.videos && (
+          <div className="video">
+            <video autoPlay={1} muted>
+              <source
+                src="./assets/img/projects/theCallOfJustice/1.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        )}
       </div>
     </div>
   );

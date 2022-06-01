@@ -99,6 +99,15 @@
         font-size: 20px;
       }
     }
+    .video{
+      width: 100%;
+      display: flex;
+      margin-top: 16px;
+      video{
+        height: 100%;
+        width: 100%;
+      }
+    }
   }
  
 }

@@ -47,6 +47,8 @@ const Experience = () => {
           text={ "A 2D game including collision detection and the physics of movement coded from scratch with <b>C<b> and <b>SDL Library<b>." }
           timeStart={"Feb 22, 2021"}
           timeEnd={"Jun 01, 2021"}
+          videos={3}
+          folder={"theCallOfJustice"}
         />
         <SingleExperience
           title={"Kingdoms"}
