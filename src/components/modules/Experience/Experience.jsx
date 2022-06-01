@@ -7,26 +7,28 @@ const Experience = () => {
   let reverse = true;
   return (
     <div className="experience" id="career">
-      <h2 className="sec-title">what i studied</h2>
-      <h1 className="main-title">my education</h1>
+      
       {experiences.map((items) => (
-      <div className="experiences" key={items.type}>
-        {items.list
-          .map((item) => {
-            reverse = !reverse;
-            return (
-              <SingleExperience
-                title={item.title}
-                subtitle={item.subtitle}
-                text={item.text}
-                timeStart={item.timeStart}
-                timeEnd={item.timeEnd}
-                reverse={reverse}
-                key={item.id}
-              />
-            );
-          })}
-      </div>
+        <>
+        <h2 className="sec-title">what i studied</h2>
+        <h1 className="main-title">my education</h1>
+          <div className="experiences" key={items.type}>
+            {items.list.map((item) => {
+              reverse = !reverse;
+              return (
+                <SingleExperience
+                  title={item.title}
+                  subtitle={item.subtitle}
+                  text={item.text}
+                  timeStart={item.timeStart}
+                  timeEnd={item.timeEnd}
+                  reverse={reverse}
+                  key={item.id}
+                />
+              );
+            })}
+          </div>
+        </>
       ))}
     </div>
   );
