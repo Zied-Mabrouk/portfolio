@@ -11,8 +11,7 @@ const Experience = () => {
       <h1 className="main-title">my education</h1>
       {experiences.map((items) => (
       <div className="experiences" key={items.type}>
-        {experiences
-          .filter((item) => item.type === "studies")
+        {items.list
           .map((item) => {
             reverse = !reverse;
             return (
