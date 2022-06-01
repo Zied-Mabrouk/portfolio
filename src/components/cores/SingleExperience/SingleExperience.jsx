@@ -1,6 +1,7 @@
 import React from "react";
 import "./SingleExperience.scss";
 import { TiTick } from "react-icons/ti";
+import SimpleSlider from "../SimpleSlider/SimpleSlider";
 
 const SingleExperience = (props) => {
   let reversed = props.reverse;
@@ -47,7 +48,7 @@ const SingleExperience = (props) => {
         </div>
         {props.videos && (
           <div className="video">
-            <video autoPlay={1} muted>
+            <video autoPlay={1} muted loop>
               <source
                 src="./assets/img/projects/theCallOfJustice/1.mp4"
                 type="video/mp4"
