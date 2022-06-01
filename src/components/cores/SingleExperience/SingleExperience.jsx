@@ -48,7 +48,7 @@ const SingleExperience = (props) => {
         </div>
         {props.videos && (
           <div className="video">
-            <video autoPlay={1} muted loop>
+            <video autoPlay={1} muted loop={true}>
               <source
                 src="./assets/img/projects/theCallOfJustice/1.mp4"
                 type="video/mp4"
