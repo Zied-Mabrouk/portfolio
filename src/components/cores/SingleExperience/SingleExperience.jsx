@@ -22,7 +22,7 @@ const SingleExperience = (props) => {
         <p style={{ textAlign: reversed ? "left" : "right" }}>
           {text.split("<b>").map((item, key) => {
             if (key && key % 2 === 1) {
-              return <b>{item}</b>;
+              return <b key={key}>{item}</b>;
             }
             return item;
           })}
@@ -48,12 +48,10 @@ const SingleExperience = (props) => {
         </div>
         {props.videos && (
           <div className="video">
-            <video autoPlay={1} muted loop={true}>
-              <source
-                src="./assets/img/projects/theCallOfJustice/1.mp4"
-                type="video/mp4"
-              />
-            </video>
+            <SimpleSlider
+            videos={props.videos}
+            folder={props.folder}
+            />
           </div>
         )}
       </div>
