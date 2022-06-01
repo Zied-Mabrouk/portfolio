@@ -4,29 +4,37 @@ import { TiTick } from "react-icons/ti";
 
 const SingleExperience = (props) => {
   let reversed = props.reverse;
+  let text = props.text;
   return (
-    <div className="singleExperience" style={{ flexDirection:reversed ? "row-reverse" : "row" } }>
+    <div
+      className="singleExperience"
+      style={{ flexDirection: reversed ? "row-reverse" : "row" }}
+    >
       <div className={reversed ? "desc reversed-desc" : "desc"}>
-        <h1
-          style={{ textAlign: reversed ? "left" : "right" }}
-        >
+        <h1 style={{ textAlign: reversed ? "left" : "right" }}>
           {props.title}
         </h1>
 
-        <h2
-          style={{ textAlign: reversed ? "left" : "right" }}
-        >
+        <h2 style={{ textAlign: reversed ? "left" : "right" }}>
           {props.subtitle}
         </h2>
-        <p
-          style={{ textAlign: reversed ? "left" : "right" }}
-        >
-          {props.text}
-        </p>
+        <p style={{ textAlign: reversed ? "left" : "right" }}>
+          {
+            text.split("<b>").map((item, key) => {
+             if(key && key%2===1)
+             {
+              return(<b>{item}</b>)
+             }
+              return item;
+          })
+          }
+          </p>
       </div>
       <div className="line">
-        <div>
-          <TiTick />
+        <div className="outer">
+          <div className="inner">
+            <TiTick />
+          </div>
         </div>
       </div>
       <div

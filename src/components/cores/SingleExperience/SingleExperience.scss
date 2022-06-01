@@ -25,6 +25,9 @@
       letter-spacing: 1px;
       word-spacing: 0.7px;
       font-family: Montserrat, sans-serif;
+      b{
+        font-weight: 700;
+      }
     }
     
   }
@@ -37,13 +40,18 @@
     position: relative;
     display: flex;
     justify-content: center;
-    div {
+    .outer {
       border-radius: 50%;
       opacity: .95;
-      background-color: var(--color-bg);
       padding: 3px;
+      border: 1px solid var(--color-primary-dark);
       position: absolute;
       top: 12px;
+      .inner{
+        border-radius: 50%;
+        background-color: var(--color-bg);
+        padding: 3px;
+      }
     }
   }
   .date {

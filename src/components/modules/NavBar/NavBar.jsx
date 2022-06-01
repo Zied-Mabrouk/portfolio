@@ -33,9 +33,9 @@ const NavBar = () => {
         <GiGiftOfKnowledge />
       </a>
       <a
-        href="#experience"
-        className={activeNav === "#experience" ? "active" : ""}
-        onClick={() => setActiveNav("#experience")}
+        href="#career"
+        className={activeNav === "#career" ? "active" : ""}
+        onClick={() => setActiveNav("#career")}
       >
         <MdOutlineWork />
       </a>
