@@ -10,8 +10,8 @@ const Experience = () => {
       
       {experiences.map((items) => (
         <>
-        <h2 className="sec-title">what i studied</h2>
-        <h1 className="main-title">my education</h1>
+        <h2 className="sec-title">{items.sec}</h2>
+        <h1 className="main-title">{items.main}</h1>
           <div className="experiences" key={items.type}>
             {items.list.map((item) => {
               reverse = !reverse;

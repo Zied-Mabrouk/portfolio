@@ -1,5 +1,7 @@
 [{
         "type": "studies",
+        "main": "my education",
+        "sec":"what i studied",
         "list": [{
                 "id": 1,
                 "title": "High school student",
@@ -20,6 +22,8 @@
     },
     {
         "type": "work",
+        "main": "my experience",
+        "sec":"what i did",
         "list": [{
             "id": 3,
             "title": "Web Developer",
@@ -32,6 +36,8 @@
     },
     {
         "type": "projects",
+        "main": "my Projects",
+        "sec":"what i coded",
         "list": [{
             "id": 4,
             "title": "The Call Of Justice",
@@ -43,8 +49,7 @@
                 "./assets/img/projects/theCallOfJustice/1.mp4",
                 "./assets/img/projects/theCallOfJustice/2.mp4",
                 "./assets/img/projects/theCallOfJustice/3.mp4"
-            ],
-            "type": "projects"
+            ]
         },
         {
             "id": 5,
@@ -82,6 +87,8 @@
     },
     {
         "type": "club",
+        "main": "my volunteering experience",
+        "sec":"what i contibuted to",
         "list": [{
             "id": 8,
             "title": "General Secretary",
@@ -118,6 +125,8 @@
     },
     {
         "type": "certificate",
+        "main": "my certificates",
+        "sec":"what i learned",
         "list": [{
             "id": 12,
             "title": "Project Management & Pitching",
@@ -138,6 +147,8 @@
     },
     {
         "type": "passion",
+        "main": "my passions",
+        "sec":"what i like",
         "list": [ {
             "id": 14,
             "title": "Programming",
