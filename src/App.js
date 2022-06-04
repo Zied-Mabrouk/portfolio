@@ -7,7 +7,6 @@ import About from "./components/modules/About/About";
 import Expertise from "./components/modules/Expertise/Expertise";
 import Experience from "./components/modules/Experience/Experience";
 import Contact from "./components/modules/Contact/Contact";
-import Triangle from "./components/cores/Triangle/Triangle";
 
 function App() {
 
