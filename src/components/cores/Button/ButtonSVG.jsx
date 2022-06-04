@@ -2,8 +2,9 @@ import React from "react";
 import "./ButtonSVG.scss";
 
 const ButtonSVG = (props) => {
+  let path = props.type === "download"? "./assets/resume.pdf":"#contact";
   return (
-    <a href="#damn" className="btn-track">
+    <a href={path} className="btn-track" download={props.type === "download"}>
       {props.type === "download" && (
         <div className="--icon">
           <div className="circle-inner"></div>
