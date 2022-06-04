@@ -16,3 +16,12 @@
     width: 70%;
   }
 }
+@media (max-height: 900px) {
+  .expertise{
+    padding-block:32px !important;
+  }
+  .expertise-skills {
+    gap: 8px !important;
+    margin-top: 32px !important;
+  }
+}

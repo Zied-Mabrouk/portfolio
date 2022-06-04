@@ -8,17 +8,16 @@
     width: 50%;
     justify-content: flex-start;
     gap: 64px;
-    span{
+    span {
       display: flex;
       justify-content: center;
       width: 150px;
-    img {
-      max-height: 50px;
-      max-width: 90px;
-      min-width: 40px;
+      img {
+        max-height: 50px;
+        max-width: 90px;
+        min-width: 40px;
+      }
     }
-      
-  }
     p {
       color: var(--color-bg);
       font-size: 25px;
@@ -30,10 +29,22 @@
     display: flex;
     align-items: center;
     gap: 16px;
-    span{
+    span {
       color: var(--color-primary-dark);
       font-size: 25px;
       font-weight: 900;
+    }
+  }
+}
+
+@media (max-height: 900px) {
+  .skill {
+    .desc {
+      img {
+        max-height: 40px !important;
+        max-width: 70px !important;
+        min-width: 40px !important;
+      }
     }
   }
 }
