@@ -6,7 +6,7 @@
   align-items: center;
   height: 100vh;
   justify-content: center;
-  
+
   .expertise-skills {
     display: flex;
     flex-direction: column;
@@ -17,11 +17,30 @@
   }
 }
 @media (max-height: 900px) {
-  .expertise{
-    padding-block:32px !important;
+  .expertise {
+    padding-block: 32px !important;
   }
   .expertise-skills {
     gap: 8px !important;
     margin-top: 32px !important;
+  }
+}
+@media (max-width: 767px) {
+  .expertise {
+    padding-block: 32px !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .main-title,.sec-title{
+      width: 100%;
+    }
+
+    .expertise-skills {
+      margin-top: 16px !important;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 95%;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }

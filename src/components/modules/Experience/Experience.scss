@@ -8,10 +8,18 @@
   .experiences{
     margin-block:64px ;
     max-width:1200px;
-    width:1200px;
+    width:100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 48px;
+  }
+}
+@media (max-width: 767px){
+  .experience{
+    padding-block: 32px;
+    .experiences{
+      margin-block: 32px;
+    }
   }
 }

@@ -46,5 +46,27 @@
         min-width: 40px !important;
       }
     }
+    
+  }
+}
+@media (max-width: 767px) {
+  .skill {
+    flex-direction: column;
+    gap: 16px;
+    width: 45%;
+    .desc{
+      width: 100%;
+      gap: 8px;
+      justify-content: center;
+      span{
+        height: 100%;
+        width: 50px;
+      }
+    }
+    .levelbar{
+      flex-direction: column;
+      width: 100%;
+      gap: 8px;
+    }
   }
 }

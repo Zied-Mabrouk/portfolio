@@ -24,6 +24,8 @@ html {
     scroll-behavior: smooth;
 }
 
+
+
 body {
     background: var(--color-bg);
     background-image: url("../public/assets/img/bg-texture.png");
@@ -229,12 +231,19 @@ section {
     letter-spacing: 4px;
     text-align: center;
     width: 100%;
-  }
-  .main-title {
+}
+
+.main-title {
     color: var(--color-bg);
     font-family: Montserrat, sans-serif;
     font-size: 64px;
     text-transform: capitalize;
     margin-block: 16px;
     text-align: center;
-  }
+}
+
+@media (max-width: 767px) {
+    .main-title {
+        margin-block: 8px;
+    }
+}

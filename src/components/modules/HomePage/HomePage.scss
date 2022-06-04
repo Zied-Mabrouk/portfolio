@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
 
   h1 {
     font-family: "Poppins", sans-serif;
@@ -35,5 +36,21 @@
     display: flex;
     gap: 32px;
   }
-
+}
+@media (max-width: 767px) {
+  #home {
+    width: 100%;
+    .home-titles {
+      height: fit-content;
+      h1 {
+        font-size: 100px ;
+      }
+      h2{
+        font-size: 60px;
+      }
+    }
+    .home-buttons{
+      flex-direction: column;
+    }
+  }
 }

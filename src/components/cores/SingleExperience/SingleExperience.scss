@@ -106,7 +106,69 @@
     }
     .slick-slider {
       * {
-        color:black;
+        color: black;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .singleExperience {
+    flex-direction: column !important;
+    align-items: center;
+    gap: 0;
+    position: relative;
+    width: 100%;
+    .desc {
+      width: 80%;
+      padding: 0;
+      max-width: 80%;
+      gap: 12px;
+      h1 {
+        text-align: center !important;
+        font-size: 35px;
+      }
+      h2 {
+        text-align: center !important;
+        font-size: 25px;
+      }
+      p {
+        margin-top: 8px;
+        text-align: justify !important;
+      }
+    }
+    .line {
+      display: none;
+    }
+    .date {
+      width: 100%;
+      padding: 0 !important;
+      position: absolute;
+      top: 0;
+      left: -10px;
+      .bubble {
+        align-self: center;
+        width: 150px;
+        justify-content: center;
+        padding: 8px;
+        background-color: rgb(31, 31, 56, 0.8);
+        .arrow {
+          display: none;
+        }
+        h2 {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          span{
+            font-size: 16px;
+            line-height: 0.8;
+          }
+        }
+        .body {
+          position: relative;
+          width: 0;
+        }
       }
     }
   }

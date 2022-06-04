@@ -42,7 +42,7 @@ const SingleExperience = (props) => {
         <div className="bubble">
           <div className={reversed ? "arrow reversed-arrow" : "arrow"}></div>
           <h2>
-            {props.timeStart} - <span>{props.timeEnd}</span>
+          <span>{props.timeStart}</span> <span>-</span> <span>{props.timeEnd}</span>
           </h2>
           <div className="body"></div>
         </div>

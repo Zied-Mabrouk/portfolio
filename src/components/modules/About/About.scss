@@ -77,3 +77,14 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  #about{
+    .about-me{
+      flex-direction: column;
+      .about-me-text{
+        gap: 16px;
+      }
+    }
+  }
+}
