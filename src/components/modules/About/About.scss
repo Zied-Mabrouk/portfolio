@@ -26,6 +26,7 @@
     h1{
       font-size: 80px;
       color:inherit;
+      text-align: center;
       b{
         color: var(--color-primary);
       }
@@ -33,7 +34,7 @@
     h2{
       font-size: 50px;
       color:inherit;
-
+      text-align: center;
     }
   }
   
@@ -78,13 +79,22 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   #about{
     .about-me{
       flex-direction: column;
       .about-me-text{
         gap: 16px;
       }
+    }
+  }
+}
+@media (max-width: 768px){
+  .about {
+    .about-me-container
+    {
+      width: 300px;
+      height: 300px;
     }
   }
 }

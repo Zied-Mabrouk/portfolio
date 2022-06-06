@@ -42,4 +42,15 @@
             text-decoration: none;
         }
     }
+    
+}
+@media (max-width: 768px){
+    .contact{
+        .contact-image{
+            display: none !important;
+        }
+        .contact-content{
+            width: 100%;
+        }
+    }
 }

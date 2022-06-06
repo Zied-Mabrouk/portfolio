@@ -23,3 +23,12 @@
     }
   }
 }
+
+@media (max-width: 768px){
+  .experience{
+    padding-block: 32px;
+    .experiences{
+      margin-block: 32px;
+    }
+  }
+}

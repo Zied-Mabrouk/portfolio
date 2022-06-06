@@ -20,6 +20,7 @@
     font-family: "Poppins", sans-serif;
     font-size: 50px;
     text-shadow: 0 0 10px black, 0 0 8px var(--color-light);
+    text-align: center;
   }
 
   .home-titles {
@@ -37,7 +38,7 @@
     gap: 32px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   #home {
     width: 100%;
     .home-titles {
@@ -54,3 +55,17 @@
     }
   }
 }
+
+@media (max-width: 768px){
+  #home{
+    .home-titles{
+      h1{
+        font-size: 50px;
+      }
+      h2{
+        font-size: 40px;
+      }
+    }
+  }
+}
+
