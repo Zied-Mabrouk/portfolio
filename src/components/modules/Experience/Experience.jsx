@@ -5,14 +5,15 @@ import experiences from "../../../experiences.json";
 
 const Experience = () => {
   let reverse = true;
+  let index=0;
   return (
     <div className="experience" id="career">
       
       {experiences.map((items) => (
-        <>
-        <h2 className="sec-title">{items.sec}</h2>
-        <h1 className="main-title">{items.main}</h1>
-          <div className="experiences" key={items.type}>
+        <div key={index++}>
+        <h2  className="sec-title">{items.sec}</h2>
+        <h1  className="main-title">{items.main}</h1>
+          <div className="experiences" >
             {items.list.map((item) => {
               reverse = !reverse;
               return (
@@ -28,7 +29,7 @@ const Experience = () => {
               );
             })}
           </div>
-        </>
+        </div>
       ))}
     </div>
   );

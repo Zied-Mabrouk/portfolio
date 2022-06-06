@@ -6,6 +6,7 @@ import SimpleSlider from "../SimpleSlider/SimpleSlider";
 const SingleExperience = (props) => {
   let reversed = props.reverse;
   let text = props.text;
+
   return (
     <div
       className="singleExperience"
