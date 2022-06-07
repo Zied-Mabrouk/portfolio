@@ -9,7 +9,7 @@ const SimpleSlider = (props) => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    infinite: false,
+    infinite: true,
   };
  
   return (
