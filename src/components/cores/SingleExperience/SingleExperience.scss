@@ -55,6 +55,8 @@
   }
   .date {
     opacity: 0.95;
+    display: flex;
+    flex-direction: column;
     .bubble {
       position: relative;
       background-color: var(--color-bg);

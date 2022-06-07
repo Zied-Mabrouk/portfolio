@@ -26,6 +26,7 @@ const Experience = () => {
                   timeEnd={item.timeEnd}
                   reverse={reverse}
                   key={item.id}
+                  videos={item.videos}
                 />
               );
             })}

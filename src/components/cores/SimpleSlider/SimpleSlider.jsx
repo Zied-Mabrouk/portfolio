@@ -11,13 +11,10 @@ const SimpleSlider = (props) => {
     slidesToScroll: 1,
     infinite: false,
   };
-  let videos = [];
-  for (let i = 1; i <= props.videos; i++) {
-    videos.push("./assets/img/projects/theCallOfJustice/" + i + ".mp4");
-  }
+ 
   return (
     <Slider {...settings}>
-      {videos.map((item, key) => {
+      {props.videos.map((item, key) => {
         let changeMute = () => setMuted(!muted);
         return (
           <div className="mySlider" key={key} onClick={changeMute}>

@@ -11,7 +11,7 @@ import { useState, useRef, useEffect } from "react";
 
 function App() {
 
-  let [active, setActive] = useState("home");
+  let [active, setActive] = useState("#home");
   let myRef = useRef(null);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   var offsets = [];
@@ -19,12 +19,12 @@ function App() {
     let child = null;
     for (child of myRef?.current.children) {
       if (child.id !== "")
-      offsets.push([child.offsetTop, "#"+child.id]);
+        offsets.push([child.offsetTop, "#" + child.id]);
     }
   }, [offsets]);
   const handleScroll = () => {
     offsets.forEach((element) => {
-      if (window.scrollY + (window.innerHeight*0.5) >= element[0]) {
+      if (window.scrollY + (window.innerHeight * 0.5) >= element[0]) {
         setActive(element[1]);
         return;
       }

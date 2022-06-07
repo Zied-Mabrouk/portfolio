@@ -38,7 +38,7 @@ const SingleExperience = (props) => {
       </div>
       <div
         className="date"
-        style={reversed ? { paddingRight: "48px" } : { paddingLeft: "48px" }}
+        style={reversed ? { paddingRight: "48px",alignItems:"flex-end" } : { paddingLeft: "48px",alignItems:"flex-start" }}
       >
         <div className="bubble">
           <div className={reversed ? "arrow reversed-arrow" : "arrow"}></div>
@@ -51,7 +51,6 @@ const SingleExperience = (props) => {
           <div className="video">
             <SimpleSlider
             videos={props.videos}
-            folder={props.folder}
             />
           </div>
         )}
