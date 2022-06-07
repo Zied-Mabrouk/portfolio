@@ -3,7 +3,6 @@ import Slider from "react-slick";
 import "./SimpleSlider.scss";
 
 const SimpleSlider = (props) => {
-  let [muted, setMuted] = useState(true);
   var settings = {
     dots: true,
     speed: 500,
@@ -11,20 +10,76 @@ const SimpleSlider = (props) => {
     slidesToScroll: 1,
     infinite: true,
   };
- 
-  return (
+
+  let [showGalery, setShowGalery] = useState(false);
+  let selectedPic = 0;
+  let [galeryPics,setGaleryPics] = useState([]);
+  let handleClick = (e, k) => {
+    selectedPic=(k);
+    setShowGalery(true);
+    if(k)
+    {
+      let tmp = [];
+      for(let i=0,index=k;i<props.photos.length;i++,index++)
+      {
+        if(index===props.photos.length)
+        {
+          index=0;
+        }
+        tmp.push(props.photos[index]);
+      }
+      setGaleryPics(tmp);
+    }
+    else
+    setGaleryPics(props.photos);
+  };
+  let closeGalery = (e) => {
+    if(e.target.className === "galery"){
+      setShowGalery(false);
+    }
+  };
+
+  return props.videos?.length ? (
     <Slider {...settings}>
       {props.videos.map((item, key) => {
-        let changeMute = () => setMuted(!muted);
         return (
-          <div className="mySlider" key={key} onClick={changeMute}>
-            <video autoPlay={1} muted={muted} loop={true}>
+          <div className="mySlider" key={key}>
+            <video autoPlay={1} muted={true} loop={true}>
               <source src={item} type="video/mp4" />
             </video>
           </div>
         );
       })}
     </Slider>
+  ) : (
+    <>
+      {showGalery && (
+        <div className="galery" onClick={closeGalery}>
+          <Slider {...settings}>
+            {galeryPics.map((item, key) => {
+              return (
+                <div className="mySlider" key={key}>
+                  <img src={item} alt={key} />
+                </div>
+              );
+            })}
+          </Slider>
+        </div>
+      )}
+      <Slider {...settings}>
+        {props.photos.map((item, key) => {
+          return (
+            <div
+              className="mySlider"
+              key={key}
+              onClick={(event) => handleClick(event, key)}
+            >
+              <img src={item} alt={key} />
+            </div>
+          );
+        })}
+      </Slider>
+    </>
   );
 };
 

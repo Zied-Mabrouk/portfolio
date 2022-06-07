@@ -47,10 +47,11 @@ const SingleExperience = (props) => {
           </h2>
           <div className="body"></div>
         </div>
-        {props.videos && (
+        {(props.videos || props.photos) && (
           <div className="video">
             <SimpleSlider
             videos={props.videos}
+            photos={props.photos}
             />
           </div>
         )}

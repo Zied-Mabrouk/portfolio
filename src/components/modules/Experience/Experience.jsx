@@ -27,6 +27,7 @@ const Experience = () => {
                   reverse={reverse}
                   key={item.id}
                   videos={item.videos}
+                  photos={item.photos}
                 />
               );
             })}
