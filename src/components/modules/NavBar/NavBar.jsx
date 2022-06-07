@@ -1,51 +1,30 @@
-import React, { useState } from "react";
+import React from "react";
 import "./NavBar.scss";
 import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
-import {  BiMessageSquareDetail } from "react-icons/bi";
+import { BiMessageSquareDetail } from "react-icons/bi";
 import { GiGiftOfKnowledge } from "react-icons/gi";
 import { MdOutlineWork } from "react-icons/md";
 
-
-const NavBar = () => {
-  const [activeNav, setActiveNav] = useState("#home");
-
+const NavBar = ({ active, setActive }) => {
+  let hrefs = [
+    ["#home", <AiOutlineHome />],
+    ["#about", <AiOutlineUser />],
+    ["#expertise", <GiGiftOfKnowledge />],
+    ["#career", <MdOutlineWork />],
+    ["#contact", <BiMessageSquareDetail />],
+  ];
   return (
     <header className="NavBar">
-      <a
-        href="#home"
-        className={activeNav === "#home" ? "active" : ""}
-        onClick={() => setActiveNav("#home")}
-      >
-        <AiOutlineHome />
-      </a>
-      <a
-        href="#about"
-        className={activeNav === "#about" ? "active" : ""}
-        onClick={() => setActiveNav("#about")}
-      >
-        <AiOutlineUser />
-      </a>
-      <a
-        href="#expertise"
-        className={activeNav === "#expertise" ? "active" : ""}
-        onClick={() => setActiveNav("#expertise")}
-      >
-        <GiGiftOfKnowledge />
-      </a>
-      <a
-        href="#career"
-        className={activeNav === "#career" ? "active" : ""}
-        onClick={() => setActiveNav("#career")}
-      >
-        <MdOutlineWork />
-      </a>
-      <a
-        href="#contact"
-        className={activeNav === "#contact" ? "active" : ""}
-        onClick={() => setActiveNav("#contact")}
-      >
-        <BiMessageSquareDetail />
-      </a>
+      {hrefs.map((href, index) => (
+        <a
+          href={href[0]}
+          className={active === href[0] ? "active" : ""}
+          onClick={() => setActive(href[0])}
+          key={index}
+        >
+          {href[1]}
+        </a>
+      ))}
     </header>
   );
 };

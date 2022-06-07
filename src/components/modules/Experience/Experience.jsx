@@ -6,6 +6,7 @@ import experiences from "../../../experiences.json";
 const Experience = () => {
   let reverse = true;
   let index=0;
+  
   return (
     <div className="experience" id="career">
       

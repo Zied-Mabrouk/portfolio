@@ -3,8 +3,9 @@ import React from "react";
 import Triangle from "../../cores/Triangle/Triangle";
 
 const About = () => {
+  
   return (
-    <div className="about" id="about">
+    <div className="about" id="about" >
       <Triangle />
       <div className="about-me">
         <div className="about-me-text">

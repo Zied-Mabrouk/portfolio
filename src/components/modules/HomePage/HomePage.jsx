@@ -3,8 +3,9 @@ import ButtonSVG from "../../cores/Button/ButtonSVG";
 import "./HomePage.scss";
 
 const HomePage = () => {
+  
   return (
-    <section id="home">
+    <section id="home" >
       <div className="home-titles">
         <h2>Zied Mabrouk</h2>
         <h1>Web Developer</h1>
@@ -14,7 +15,6 @@ const HomePage = () => {
           <ButtonSVG content="Contact me" type="contact" />
         </div>
       </div>
-      
     </section>
   );
 };
