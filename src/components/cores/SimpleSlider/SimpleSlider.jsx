@@ -12,10 +12,8 @@ const SimpleSlider = (props) => {
   };
 
   let [showGalery, setShowGalery] = useState(false);
-  let selectedPic = 0;
   let [galeryPics,setGaleryPics] = useState([]);
   let handleClick = (e, k) => {
-    selectedPic=(k);
     setShowGalery(true);
     if(k)
     {
