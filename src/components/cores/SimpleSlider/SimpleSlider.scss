@@ -40,13 +40,18 @@
     margin-inline: auto;
     z-index:1;
   }
-  img {
-    height: 100%;
-    width: 95%;
-    max-width: 100vh;
-    margin-inline: auto;
-    z-index: 1;
-    border-radius: 5px;
+  .mySlider{
+  height: 100vh;
+  display: flex !important;
+  align-items: center;
+    img {
+      height: fit-content;
+      width: 95%;
+      max-width: 100vh;
+      margin-inline: auto;
+      z-index: 1;
+      border-radius: 5px;
+    }
   }
   .slick-arrow{
     height: 35px;

@@ -30,7 +30,13 @@
             "subtitle": "TCB",
             "text": "I had the opportunity to create the official website of TCB from scratch which I implemented using <b>HTML, CSS, JS ( including bootstrap and owl-carousel library)<b> for the Front-end and <b>PHP and MySQL<b> for the Back-end. The website is dynamic and <b>responsive<b>. Working solo on this project made me discover new libraries as the one listed above and reinforce my knowledge about CSS. ",
             "timeStart": "Dec 15, 2021",
-            "timeEnd": "Mar 15, 2022"
+            "timeEnd": "Mar 15, 2022",
+            "photos": [
+                "./assets/img/projects/tcb/1.png",
+                "./assets/img/projects/tcb/2.png",
+                "./assets/img/projects/tcb/3.png",
+                "./assets/img/projects/tcb/4.png"
+            ]
         }
         ]
     },
@@ -55,7 +61,11 @@
             "subtitle": "Plugin Minecraft",
             "text": "Since I've been playing Minecraft with friends and I heard that it was possible to code some plugins to spicy up things, I decided to start my own plugin. Kingdoms is a Minecraft Plugin simulating wars between realms taking place in the medieval era coded entirely in <b>Java<b> with a <b>MongoDB<b> database.",
             "timeStart": "Sep 01, 2020",
-            "timeEnd": "Jul 15, 2021"
+            "timeEnd": "Jul 15, 2021",
+            "photos":[
+                "./assets/img/projects/kingdoms/1.png",
+                "./assets/img/projects/kingdoms/2.png"
+            ]
         },
         {
             "id": 6,
@@ -105,7 +115,13 @@
             "text": "I am one of the founding members of the Rotaract and I was in charge as the general secretary within the executive board.",
             "timeStart": "Nov 01, 2020",
             "timeEnd": "Jul 30, 2021",
-            "photos":["./assets/img/certifications/secretary.jpg"]
+            "photos":[
+                "./assets/img/certifications/secretary.jpg",
+                "./assets/img/projects/rotaract/1.jpg",
+                "./assets/img/projects/rotaract/2.jpg",
+                "./assets/img/projects/rotaract/6.jpg",
+                "./assets/img/projects/rotaract/7.jpg"
+            ]
         },
         {
             "id": 9,
@@ -113,7 +129,13 @@
             "subtitle": "Rotaract NotreDame Connect",
             "text": "I organized some events in order to make new members more comfortable with the charity work even though i have to admit that I didn't dedicate my time to it since the first year of IT engineering was really challenging.",
             "timeStart": "Jul 30, 2021",
-            "timeEnd": "Now"
+            "timeEnd": "Now",
+            "photos":[
+                "./assets/img/projects/rotaract/4.jpg",
+                "./assets/img/projects/rotaract/3.jpg",
+                "./assets/img/projects/rotaract/2.jpg",
+                "./assets/img/projects/rotaract/5.jpg"
+            ]
         },
         {
             "id": 10,
