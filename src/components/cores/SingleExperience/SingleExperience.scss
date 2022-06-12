@@ -151,6 +151,13 @@
       top: 0;
       left: -10px;
       align-items:center !important;
+      .video{
+        .galery{
+          .slick-arrow{
+            height: 20px;
+          }
+        }
+      }
       .bubble {
         align-self: center;
         width: 150px;
@@ -180,5 +187,12 @@
 }
 
 @media (max-width: 768px){
-  
+  .singleExperience{
+    .date{
+      .video{
+        padding-left:64px ;
+        padding-right:64px ;
+      }
+    }
+  }
 }
