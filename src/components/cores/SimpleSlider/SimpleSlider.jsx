@@ -33,7 +33,7 @@ const SimpleSlider = (props) => {
     setGaleryPics(props.photos);
   };
   let closeGalery = (e) => {
-    if(e.target.tagName !== "IMG"){
+    if(e.target.tagName !== "IMG" && e.target.tagName !== "BUTTON"){
       setShowGalery(false);
     }
   };
