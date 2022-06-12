@@ -121,7 +121,8 @@
             "subtitle": "IEEE",
             "text": "I participated in the TSYP which is a Tunisian students and young professionals congress held annualy where more than 500 engineering students from several Tunisian universities, as well as young professionals, gather to learn further details about the IEEE technical, professional, and educational benefits and to discuss the future engineering challenges worldwide and in Tunisia. We ended up winning the Power & Energy Society challenge.",
             "timeStart": "Sep 15, 2019",
-            "timeEnd": "Jun 01, 2020"
+            "timeEnd": "Jun 01, 2022",
+            "photos":["./assets/img/certifications/IEEE.png"]
         },
         {
             "id": 11,
@@ -129,7 +130,8 @@
             "subtitle": "IEEE",
             "text": "I attented many congresses and workshops to improve my professional skills.",
             "timeStart": "Dec 12, 2021",
-            "timeEnd": "Now"
+            "timeEnd": "Now",
+            "photos":["./assets/img/certifications/CS.png"]
         }
         ]
     },
