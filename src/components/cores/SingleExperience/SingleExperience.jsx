@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./SingleExperience.scss";
 import { TiTick } from "react-icons/ti";
 import SimpleSlider from "../SimpleSlider/SimpleSlider";
