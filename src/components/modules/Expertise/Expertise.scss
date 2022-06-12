@@ -16,7 +16,7 @@
     width: 70%;
   }
 }
-@media (max-height: 900px) {
+@media (max-height: 800px) {
   .expertise {
     padding-block: 32px !important;
   }
@@ -48,6 +48,7 @@
   .expertise{
     height: fit-content;
     .expertise-skills{
+      gap: 32px;
     }
   }
 }

@@ -190,8 +190,12 @@
   .singleExperience{
     .date{
       .video{
-        padding-left:64px ;
-        padding-right:64px ;
+        width: 300px;
+      }
+    }
+    .desc{
+      p{
+        width: 90%;
       }
     }
   }
