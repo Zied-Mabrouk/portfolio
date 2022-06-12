@@ -16,8 +16,6 @@ const SimpleSlider = (props) => {
 
   let handleClick = (e, k) => {
     setShowGalery(true);
-    //e.target.classList.add("prioritize");
-    //(e.target.offsetParent.offsetParent.offsetParent.classList.add("prioritize"));
     if(k)
     {
       let tmp = [];
@@ -35,8 +33,7 @@ const SimpleSlider = (props) => {
     setGaleryPics(props.photos);
   };
   let closeGalery = (e) => {
-    if(e.target.className === "galery"){
-      //e.target.classList.add("prioritize");
+    if(e.target.tagName !== "IMG"){
       setShowGalery(false);
     }
   };
