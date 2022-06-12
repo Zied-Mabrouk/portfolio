@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./SingleExperience.scss";
 import { TiTick } from "react-icons/ti";
 import SimpleSlider from "../SimpleSlider/SimpleSlider";
@@ -6,7 +6,7 @@ import SimpleSlider from "../SimpleSlider/SimpleSlider";
 const SingleExperience = (props) => {
   let reversed = props.reverse;
   let text = props.text;
-
+  
   return (
     <div
       className="singleExperience"

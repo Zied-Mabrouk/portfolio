@@ -13,8 +13,11 @@ const SimpleSlider = (props) => {
 
   let [showGalery, setShowGalery] = useState(false);
   let [galeryPics,setGaleryPics] = useState([]);
+
   let handleClick = (e, k) => {
     setShowGalery(true);
+    //e.target.classList.add("prioritize");
+    //(e.target.offsetParent.offsetParent.offsetParent.classList.add("prioritize"));
     if(k)
     {
       let tmp = [];
@@ -33,6 +36,7 @@ const SimpleSlider = (props) => {
   };
   let closeGalery = (e) => {
     if(e.target.className === "galery"){
+      //e.target.classList.add("prioritize");
       setShowGalery(false);
     }
   };
@@ -52,7 +56,7 @@ const SimpleSlider = (props) => {
   ) : (
     <>
       {showGalery && (
-        <div className="galery" onClick={closeGalery}>
+        <div  className="galery" onClick={closeGalery}>
           <Slider {...settings}>
             {galeryPics.map((item, key) => {
               return (
@@ -64,7 +68,7 @@ const SimpleSlider = (props) => {
           </Slider>
         </div>
       )}
-      <Slider {...settings}>
+      <Slider  {...settings}>
         {props.photos.map((item, key) => {
           return (
             <div

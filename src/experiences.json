@@ -71,7 +71,10 @@
             "subtitle": "Academic Project",
             "text": "A <b>FullStack<b> website that manages the operation of a restaurant remotely. it contains many useful features saving time for both the employees and the clients at the same time.",
             "timeStart": "Feb 22, 2021",
-            "timeEnd": "Jun 01, 2021"
+            "timeEnd": "Jun 01, 2021",
+            "photos": [
+                "./assets/img/projects/emerald/logo.png"
+            ]
         },
         {
             "id": 8,
@@ -101,7 +104,8 @@
             "subtitle": "Rotaract NotreDame Connect",
             "text": "I am one of the founding members of the Rotaract and I was in charge as the general secretary within the executive board.",
             "timeStart": "Nov 01, 2020",
-            "timeEnd": "Jul 30, 2021"
+            "timeEnd": "Jul 30, 2021",
+            "photos":["./assets/img/certifications/secretary.jpg"]
         },
         {
             "id": 9,
@@ -139,7 +143,8 @@
             "subtitle": "Rotaract La Marsa Carthage",
             "text": "During the Racathon which is a Hackathon hosted by Rotaract La Marsa Carthage, we developed ideas about how to save water and started designing a mobile application for that purpose.This event lasted 24 hours so it was exhausting and fun at the same time.",
             "timeStart": "Mar 19, 2022",
-            "timeEnd": "Mar 20, 2022"
+            "timeEnd": "Mar 20, 2022",
+            "photos":["./assets/img/certifications/racathon.png"]
         },
         {
             "id": 13,
@@ -147,7 +152,8 @@
             "subtitle": "Rotaract NotreDame Connect",
             "text": "In this occasion I learned how to negotiate with the people at the top of the hierarchy to settle a sponsorship or any deal and how to be prepared mentally and physically for the tough situation I may encounter.",
             "timeStart": "Feb 13,2022",
-            "timeEnd": "Feb 13,2022"
+            "timeEnd": "Feb 13,2022",
+            "photos":["./assets/img/certifications/sponsoring.png"]
         }
         ]
     },

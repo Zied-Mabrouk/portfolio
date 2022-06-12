@@ -19,6 +19,12 @@
 .slick-prev:before {
   opacity: 1 !important;
 }
+.video .slick-slider {
+  z-index:0;
+}
+.prioritize{
+  z-index: 99;
+}
 .galery {
   position: fixed;
   top: 0;
@@ -32,6 +38,7 @@
   .slick-slider {
     width: 90%;
     margin-inline: auto;
+    z-index:1;
   }
   img {
     height: 100%;

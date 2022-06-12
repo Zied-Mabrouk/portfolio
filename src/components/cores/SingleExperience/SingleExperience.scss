@@ -146,8 +146,11 @@
       width: 100%;
       padding: 0 !important;
       position: sticky;
+      margin-top: 8px;
+      flex-direction: column-reverse;
       top: 0;
       left: -10px;
+      align-items:center !important;
       .bubble {
         align-self: center;
         width: 150px;
