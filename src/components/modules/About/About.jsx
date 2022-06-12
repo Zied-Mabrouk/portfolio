@@ -12,7 +12,7 @@ const About = () => {
           <h1>
             <b>A</b>bout me
           </h1>
-          <h2>I'm passionate about programming in general and I found my interest in the blockchain</h2>
+          <h2>I'm passionate about programming in general and I found my interest in the blockchain.</h2>
         </div>
         <div className="about-me-container">
           <img src="../assets/img/me.jpg" alt="me" />

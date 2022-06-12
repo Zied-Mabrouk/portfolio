@@ -94,6 +94,15 @@
 }
 @media (max-width: 768px){
   .about {
+    .about-me-text{
+      h1{
+        font-size: 60px;
+      }
+      h2{
+        margin-top: 8px;
+        font-size: 25px;
+      }
+    }
     .about-me-container
     {
       width: 300px;
