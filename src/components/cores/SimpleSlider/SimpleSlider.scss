@@ -64,6 +64,7 @@
 @media (max-width: 768px) {
   .galery {
     .slick-slider {
+      touch-action: auto !important;
       width: 100%;
       .mySlider {
         img {
