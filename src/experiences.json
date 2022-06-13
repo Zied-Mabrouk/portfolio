@@ -83,7 +83,13 @@
             "timeStart": "Feb 22, 2021",
             "timeEnd": "Jun 01, 2021",
             "photos": [
-                "./assets/img/projects/emerald/logo.png"
+                "./assets/img/projects/emerald/logo.png",
+                "./assets/img/projects/emerald/1.png",
+                "./assets/img/projects/emerald/2.png",
+                "./assets/img/projects/emerald/3.png",
+                "./assets/img/projects/emerald/4.png",
+                "./assets/img/projects/emerald/5.png",
+                "./assets/img/projects/emerald/6.png"
             ]
         },
         {

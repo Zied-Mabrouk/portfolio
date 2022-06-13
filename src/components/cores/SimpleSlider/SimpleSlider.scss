@@ -44,11 +44,11 @@
     height: 100vh;
     display: flex !important;
     align-items: center;
+    justify-content: center;
     img {
       height: fit-content;
       width: 95%;
-      max-width: 100vh;
-      margin-inline: auto;
+      max-height: 100vh;
       z-index: 1;
       border-radius: 5px;
     }
