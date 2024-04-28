@@ -12,31 +12,25 @@ const SimpleSlider = (props) => {
   };
 
   let [showGalery, setShowGalery] = useState(false);
-  let [galeryPics,setGaleryPics] = useState([]);
+  let [galeryPics, setGaleryPics] = useState([]);
 
   let handleClick = (e, k) => {
-     if(props.photos.length<=1 )
-     return;
+    if (props.photos.length <= 0 && props.videos.length <= 0) return;
+    console.log("first");
     setShowGalery(true);
-    if(k)
-    {
-      console.log("hey");
+    if (k) {
       let tmp = [];
-      for(let i=0,index=k;i<props.photos.length;i++,index++)
-      {
-        if(index===props.photos.length)
-        {
-          index=0;
+      for (let i = 0, index = k; i < props.photos.length; i++, index++) {
+        if (index === props.photos.length) {
+          index = 0;
         }
         tmp.push(props.photos[index]);
       }
       setGaleryPics(tmp);
-    }
-    else
-    setGaleryPics(props.photos);
+    } else setGaleryPics(props.photos);
   };
   let closeGalery = (e) => {
-    if(e.target.tagName !== "IMG" && e.target.tagName !== "BUTTON"){
+    if (e.target.tagName !== "IMG" && e.target.tagName !== "BUTTON") {
       setShowGalery(false);
     }
   };
@@ -56,7 +50,7 @@ const SimpleSlider = (props) => {
   ) : (
     <>
       {showGalery && (
-        <div  className="galery" onClick={closeGalery}>
+        <div className="galery" onClick={closeGalery}>
           <Slider {...settings}>
             {galeryPics.map((item, key) => {
               return (
@@ -68,7 +62,7 @@ const SimpleSlider = (props) => {
           </Slider>
         </div>
       )}
-      <Slider  {...settings}>
+      <Slider {...settings}>
         {props.photos.map((item, key) => {
           return (
             <div

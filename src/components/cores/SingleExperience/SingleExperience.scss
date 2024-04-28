@@ -41,6 +41,14 @@
     color: rgb(112, 111, 111);
     font-weight: 700;
   }
+  .view-project {
+    display: flex;
+    margin-top: 16px;
+    width: 100%;
+    a {
+      margin-left: auto;
+    }
+  }
   .line {
     border-right: 0.5px solid var(--color-bg);
     position: relative;

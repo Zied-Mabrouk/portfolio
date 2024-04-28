@@ -13,6 +13,7 @@ const SingleExperience = ({
   subtitle,
   title,
   videos,
+  href,
 }) => {
   return (
     <div
@@ -36,6 +37,13 @@ const SingleExperience = ({
             <b>Technologies: </b>
             {technologies.join(", ")}
           </span>
+        )}
+        {href && (
+          <div className="view-project">
+            <a className="link" href={href} target="_blank" rel="noreferrer">
+              <span>View Project</span>
+            </a>
+          </div>
         )}
       </div>
       <div className="line">

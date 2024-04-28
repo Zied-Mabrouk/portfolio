@@ -5,8 +5,80 @@
     "sec": "what i did",
     "list": [
       {
+        "id": 7,
+        "title": "Software Engineer Intern",
+        "href": "https://www.ruedesvignerons.com/",
+        "subtitle": "Devino",
+        "text": "I was offered an internship in France as an end-of-study project.",
+        "technologies": ["NextJS", "ReactJS", "TailwindCSS", "Jest", "DevOps"],
+        "timeStart": "Jan, 2024",
+        "timeEnd": "Now"
+      },
+      {
+        "id": 6,
+        "title": "Software Engineer",
+        "href": "https://unotes.net/",
+        "subtitle": "Devino",
+        "text": "Devino (Dev Innovations) is a dynamic software consultancy renowned for its bespoke tech solutions and unwavering commitment to client success. I was offered a position as a software engineer to work on various confidential projects and the official website of the agency.",
+        "technologies": [
+          "NextJS",
+          "ReactJS",
+          "Express",
+          "MongoDB",
+          "TailwindCSS",
+          "Rust",
+          "Django",
+          "AWS S3",
+          "Jest",
+          "DevOps"
+        ],
+        "timeStart": "Feb, 2023",
+        "timeEnd": "Jan, 2024",
+        "photos": [
+          "./assets/img/projects/unotes/1.png",
+          "./assets/img/projects/unotes/2.png",
+          "./assets/img/projects/unotes/3.png"
+        ]
+      },
+      {
+        "id": 5,
+        "title": "FullStack JS Developer",
+        "href": "https://dah-zied-mabrouk.vercel.app/",
+        "subtitle": "DAH Studio",
+        "text": "DAH Studio is a digital architectural agency working with french clients over virtual reality and 3D modeling. I implemented their official website.",
+        "technologies": [
+          "NextJS",
+          "ReactJS",
+          "Express",
+          "MongoDB",
+          "AWS S3",
+          "Scss"
+        ],
+        "timeStart": "Dec, 2022",
+        "timeEnd": "Feb, 2023",
+        "photos": [
+          "./assets/img/projects/dah/1.png",
+          "./assets/img/projects/dah/2.png",
+          "./assets/img/projects/dah/3.png",
+          "./assets/img/projects/dah/4.png",
+          "./assets/img/projects/dah/5.png"
+        ]
+      },
+      {
+        "id": 12,
+        "title": "Web Developer",
+        "href": "https://www.chateaudemontargis.fr/",
+        "subtitle": "Château de Montargis",
+        "text": "While working with DAH Studio, I had the great opportunity to take in charge their best client Château de Montargis.",
+        "technologies": ["Symfony", "PHP", "MySQL", "KRpano"],
+        "timeStart": "Jul, 2022",
+        "timeEnd": "Oct, 2023",
+        "videos": ["./assets/img/projects/dah/vr.mp4"]
+      },
+      {
         "id": 3,
         "title": "Web Developer",
+        "href": "https://tcb.tn/",
         "subtitle": "TCB",
         "text": "TCB is a steel construction and civil engineering company based in Tunisia. I have the great pleasure of developing their first website to promote them in the Tunisian market and optimize their SEO on the google search engine.",
         "technologies": [
@@ -18,8 +90,8 @@
           "JQuery",
           "Bootstrap"
         ],
-        "timeStart": "Dec 15, 2021",
-        "timeEnd": "Mar 15, 2022",
+        "timeStart": "Dec, 2021",
+        "timeEnd": "Mar, 2022",
         "photos": [
           "./assets/img/projects/tcb/1.png",
           "./assets/img/projects/tcb/2.png",
@@ -39,8 +111,8 @@
         "title": "The Call Of Justice",
         "subtitle": "Academic Project",
         "text": "A 2D game including collision detection and the physics of movement coded from scratch.",
-        "timeStart": "Feb 22, 2021",
-        "timeEnd": "Jun 01, 2021",
+        "timeStart": "Feb, 2021",
+        "timeEnd": "Jun, 2021",
         "videos": ["./assets/img/projects/theCallOfJustice/1.mp4"],
         "technologies": ["C", "SDL"]
       },
@@ -49,8 +121,8 @@
         "title": "Kingdoms",
         "subtitle": "Plugin Minecraft",
         "text": "Since I've been playing Minecraft with friends and I heard that it was possible to code some plugins to spicy up things, I decided to start my own plugin. Kingdoms is a Minecraft Plugin simulating wars between realms taking place in the medieval.",
-        "timeStart": "Sep 01, 2020",
-        "timeEnd": "Jul 15, 2021",
+        "timeStart": "Sep, 2020",
+        "timeEnd": "Jul, 2021",
         "photos": [
           "./assets/img/projects/kingdoms/1.png",
           "./assets/img/projects/kingdoms/2.png"
@@ -71,8 +143,8 @@
         "title": "Emerald Website",
         "subtitle": "Academic Project",
         "text": "A <b>FullStack<b> website that manages the operation of a restaurant remotely. it contains many useful features saving time for both the employees and the clients at the same time.",
-        "timeStart": "Feb 22, 2021",
-        "timeEnd": "Jun 01, 2021",
+        "timeStart": "Feb, 2021",
+        "timeEnd": "Jun, 2021",
         "photos": [
           "./assets/img/projects/emerald/logo.png",
           "./assets/img/projects/emerald/1.png",
@@ -98,8 +170,8 @@
         "title": "Hydra",
         "subtitle": "Academic Project",
         "text": "A platform for hosting online tournaments including your favorite games, allowing bets and donations to support e-sports players and help them improve their hardware and make a living. The platform regroups a Website, a mobile application and a desktop software.",
-        "timeStart": "Jan 28, 2022",
-        "timeEnd": "May 01, 2022",
+        "timeStart": "Jan, 2022",
+        "timeEnd": "May, 2022",
         "photos": [
           "./assets/img/projects/hydra/1.jpg",
           "./assets/img/projects/hydra/2.jpg",
@@ -108,6 +180,28 @@
           "./assets/img/projects/hydra/5.jpg",
           "./assets/img/projects/hydra/6.png"
         ],
+        "technologies": [
+          "PHP",
+          "MySQL",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "JQuery",
+          "Bootstrap",
+          "Symfony",
+          "Java",
+          "JavaFX",
+          "Codenameone"
+        ]
+      },
+      {
+        "id": 9,
+        "title": "Chat Application",
+        "subtitle": "Academic Project",
+        "text": "A platform for hosting online tournaments including your favorite games, allowing bets and donations to support e-sports players and help them improve their hardware and make a living. The platform regroups a Website, a mobile application and a desktop software.",
+        "timeStart": "Nov, 2022",
+        "timeEnd": "Nov, 2022",
+        "videos": ["./assets/img/projects/chat/demo.mov"],
         "technologies": [
           "PHP",
           "MySQL",

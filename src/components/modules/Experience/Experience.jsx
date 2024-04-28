@@ -24,6 +24,7 @@ const Experience = () => {
                 reverse = !reverse;
                 return (
                   <SingleExperience
+                    href={item.href}
                     title={item.title}
                     technologies={item.technologies}
                     subtitle={item.subtitle}
