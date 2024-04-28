@@ -4,7 +4,7 @@ import "./ButtonSVG.scss";
 const ButtonSVG = (props) => {
   let path =
     props.type === "download"
-      ? "./assets/cv.pdf"
+      ? "./assets/Zied_MABROUK_CV.pdf"
       : "mailto:almabrouk.zied@gmail.com";
   return (
     <a href={path} className="btn-track" download={props.type === "download"}>
