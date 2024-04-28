@@ -1,25 +1,28 @@
 import React from "react";
-import "./SingleExperience.scss";
 import { TiTick } from "react-icons/ti";
 import SimpleSlider from "../SimpleSlider/SimpleSlider";
+import "./SingleExperience.scss";
 
-const SingleExperience = (props) => {
-  let reversed = props.reverse;
-  let text = props.text;
-  
+const SingleExperience = ({
+  reverse: reversed,
+  text,
+  technologies,
+  photos,
+  timeStart,
+  timeEnd,
+  subtitle,
+  title,
+  videos,
+}) => {
   return (
     <div
       className="singleExperience"
       style={{ flexDirection: reversed ? "row-reverse" : "row" }}
     >
       <div className={reversed ? "desc reversed-desc" : "desc"}>
-        <h1 style={{ textAlign: reversed ? "left" : "right" }}>
-          {props.title}
-        </h1>
+        <h1 style={{ textAlign: reversed ? "left" : "right" }}>{title}</h1>
 
-        <h2 style={{ textAlign: reversed ? "left" : "right" }}>
-          {props.subtitle}
-        </h2>
+        <h2 style={{ textAlign: reversed ? "left" : "right" }}>{subtitle}</h2>
         <p style={{ textAlign: reversed ? "left" : "right" }}>
           {text.split("<b>").map((item, key) => {
             if (key && key % 2 === 1) {
@@ -28,6 +31,12 @@ const SingleExperience = (props) => {
             return item;
           })}
         </p>
+        {technologies && (
+          <span className="technologies">
+            <b>Technologies: </b>
+            {technologies.join(", ")}
+          </span>
+        )}
       </div>
       <div className="line">
         <div className="outer">
@@ -38,21 +47,22 @@ const SingleExperience = (props) => {
       </div>
       <div
         className="date"
-        style={reversed ? { paddingRight: "48px",alignItems:"flex-end" } : { paddingLeft: "48px",alignItems:"flex-start" }}
+        style={
+          reversed
+            ? { paddingRight: "48px", alignItems: "flex-end" }
+            : { paddingLeft: "48px", alignItems: "flex-start" }
+        }
       >
         <div className="bubble">
           <div className={reversed ? "arrow reversed-arrow" : "arrow"}></div>
           <h2>
-          <span>{props.timeStart}</span> <span>-</span> <span>{props.timeEnd}</span>
+            <span>{timeStart}</span> <span>-</span> <span>{timeEnd}</span>
           </h2>
           <div className="body"></div>
         </div>
-        {(props.videos || props.photos) && (
+        {(videos || photos) && (
           <div className="video">
-            <SimpleSlider
-            videos={props.videos}
-            photos={props.photos}
-            />
+            <SimpleSlider videos={videos} photos={photos} />
           </div>
         )}
       </div>

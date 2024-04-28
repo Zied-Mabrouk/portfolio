@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   justify-content: center;
 
   .expertise-skills {
@@ -25,12 +25,13 @@
     margin-top: 32px !important;
   }
 }
-@media (max-width:1024px) {
+@media (max-width: 1024px) {
   .expertise {
     padding-block: 32px !important;
     flex-direction: row;
     flex-wrap: wrap;
-    .main-title,.sec-title{
+    .main-title,
+    .sec-title {
       width: 100%;
     }
 
@@ -44,10 +45,10 @@
     }
   }
 }
-@media (max-width: 768px){
-  .expertise{
+@media (max-width: 768px) {
+  .expertise {
     height: fit-content;
-    .expertise-skills{
+    .expertise-skills {
       gap: 32px;
     }
   }

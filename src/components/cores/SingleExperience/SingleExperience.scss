@@ -34,6 +34,13 @@
     padding-right: 0;
     padding-left: 64px;
   }
+  .technologies {
+    color: rgb(112, 111, 111);
+  }
+  .technologies b {
+    color: rgb(112, 111, 111);
+    font-weight: 700;
+  }
   .line {
     border-right: 0.5px solid var(--color-bg);
     position: relative;
@@ -51,14 +58,13 @@
         background-color: var(--color-bg);
         padding: 3px;
         height: 22px;
-        &:hover{
-          background-color:white;
-          path{
-        color: var(--color-bg);
+        &:hover {
+          background-color: white;
+          path {
+            color: var(--color-bg);
           }
         }
       }
-      
     }
   }
   .date {
@@ -117,7 +123,6 @@
         color: black;
       }
     }
-    
   }
 }
 
@@ -156,10 +161,10 @@
       flex-direction: column-reverse;
       top: 0;
       left: -10px;
-      align-items:center !important;
-      .video{
-        .galery{
-          .slick-arrow{
+      align-items: center !important;
+      .video {
+        .galery {
+          .slick-arrow {
             height: 20px;
           }
         }
@@ -178,7 +183,7 @@
           display: flex;
           align-items: center;
           flex-direction: column;
-          span{
+          span {
             font-size: 16px;
             line-height: 0.8;
           }
@@ -192,16 +197,17 @@
   }
 }
 
-@media (max-width: 768px){
-  .singleExperience{
-    .date{
-      .video{
+@media (max-width: 768px) {
+  .singleExperience {
+    .date {
+      .video {
         width: 300px;
       }
     }
-    .desc{
-      p{
+    .desc {
+      p {
         width: 90%;
+        margin-inline: auto;
       }
     }
   }
