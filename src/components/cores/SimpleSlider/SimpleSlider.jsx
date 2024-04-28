@@ -15,7 +15,7 @@ const SimpleSlider = (props) => {
   let [galeryPics, setGaleryPics] = useState([]);
 
   let handleClick = (e, k) => {
-    if (props.photos.length <= 0 && props.videos.length <= 0) return;
+    if (props.photos?.length <= 0 && props.videos?.length <= 0) return;
     console.log("first");
     setShowGalery(true);
     if (k) {
@@ -36,17 +36,36 @@ const SimpleSlider = (props) => {
   };
 
   return props.videos?.length ? (
-    <Slider {...settings}>
-      {props.videos.map((item, key) => {
-        return (
-          <div className="mySlider" key={key}>
-            <video autoPlay={1} muted={true} loop={true}>
-              <source src={item} type="video/mp4" />
-            </video>
-          </div>
-        );
-      })}
-    </Slider>
+    <>
+      {showGalery && (
+        <div className="galery" onClick={closeGalery}>
+          <Slider {...settings}>
+            {props.videos.map((item, key) => {
+              return (
+                <video autoPlay={1} muted={true} loop={true}>
+                  <source src={item} type="video/mp4" />
+                </video>
+              );
+            })}
+          </Slider>
+        </div>
+      )}
+      <Slider {...settings}>
+        {props.videos.map((item, key) => {
+          return (
+            <div
+              className="mySlider"
+              key={key}
+              onClick={(event) => handleClick(event, key)}
+            >
+              <video autoPlay={1} muted={true} loop={true}>
+                <source src={item} type="video/mp4" />
+              </video>
+            </div>
+          );
+        })}
+      </Slider>
+    </>
   ) : (
     <>
       {showGalery && (

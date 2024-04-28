@@ -1,6 +1,6 @@
 import React from "react";
 import { AiFillLinkedin } from "react-icons/ai";
-import { FaPhone } from "react-icons/fa";
+import { FaGithub, FaPhone } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 import "./Contact.scss";
 
@@ -15,16 +15,50 @@ const Contact = () => {
           <a href="tel:+330695016276">+33 06 95 01 62 76</a>
         </div>
         <div>
-          <a href="mailto:almabrouk.zied@gmail.com">
+          <a
+            href="mailto:almabrouk.zied@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
             <HiMail />
           </a>
-          <a href="mailto:almabrouk.zied@gmail.com">almabrouk.zied@gmail.com</a>
+          <a
+            href="mailto:almabrouk.zied@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            almabrouk.zied@gmail.com
+          </a>
         </div>
         <div>
-          <a href="https://www.linkedin.com/in/zied-mabrouk-6401bb201/">
+          <a
+            href="https://github.com/Zied-Mabrouk/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaGithub />
+          </a>
+          <a
+            href="https://github.com/Zied-Mabrouk/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Zied Mabrouk
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://www.linkedin.com/in/zied-mabrouk-6401bb201/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <AiFillLinkedin />
           </a>
-          <a href="https://www.linkedin.com/in/zied-mabrouk-6401bb201/">
+          <a
+            href="https://www.linkedin.com/in/zied-mabrouk-6401bb201/"
+            target="_blank"
+            rel="noreferrer"
+          >
             Zied Mabrouk
           </a>
         </div>

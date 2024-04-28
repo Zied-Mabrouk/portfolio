@@ -2,7 +2,10 @@ import React from "react";
 import "./ButtonSVG.scss";
 
 const ButtonSVG = (props) => {
-  let path = props.type === "download"? "./assets/resume.pdf":"#contact";
+  let path =
+    props.type === "download"
+      ? "./assets/cv.pdf"
+      : "mailto:almabrouk.zied@gmail.com";
   return (
     <a href={path} className="btn-track" download={props.type === "download"}>
       {props.type === "download" && (
@@ -64,7 +67,7 @@ const ButtonSVG = (props) => {
             width="55"
             height="55"
             viewBox="0 0 508 508"
-            style={{ enableBackground: "new 0 0 508 508"}}
+            style={{ enableBackground: "new 0 0 508 508" }}
             id="talk"
           >
             <path

@@ -197,24 +197,12 @@
       {
         "id": 9,
         "title": "Chat Application",
-        "subtitle": "Academic Project",
-        "text": "A platform for hosting online tournaments including your favorite games, allowing bets and donations to support e-sports players and help them improve their hardware and make a living. The platform regroups a Website, a mobile application and a desktop software.",
+        "subtitle": "Technical Interview",
+        "text": "I developed a real-time chat app using the MERN stack and Socket.io, incorporating text, voice, image, and emoji features. It was a challenging yet rewarding project that enhanced my Full Stack development skills. Excited to share more and explore new opportunities in tech integration.",
         "timeStart": "Nov, 2022",
         "timeEnd": "Nov, 2022",
         "videos": ["./assets/img/projects/chat/demo.mov"],
-        "technologies": [
-          "PHP",
-          "MySQL",
-          "HTML",
-          "CSS",
-          "JavaScript",
-          "JQuery",
-          "Bootstrap",
-          "Symfony",
-          "Java",
-          "JavaFX",
-          "Codenameone"
-        ]
+        "technologies": ["ReactJS", "NodeJS", "Express", "SocketIO", "MongoDB"]
       }
     ]
   },
