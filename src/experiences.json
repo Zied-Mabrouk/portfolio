@@ -8,7 +8,7 @@
         "id": 7,
         "title": "Software Engineer Intern",
         "href": "https://www.ruedesvignerons.com/",
-        "subtitle": "Devino",
+        "subtitle": "Rue des Vignerons",
         "text": "I was offered an internship in France as an end-of-study project.",
         "technologies": ["NextJS", "ReactJS", "TailwindCSS", "Jest", "DevOps"],
         "timeStart": "Jan, 2024",
@@ -30,7 +30,9 @@
           "Django",
           "AWS S3",
           "Jest",
-          "DevOps"
+          "DevOps",
+          "graphql",
+          "Prisma"
         ],
         "timeStart": "Feb, 2023",
         "timeEnd": "Jan, 2024",
