@@ -13,7 +13,7 @@ export const skills = [
   [60, "C++", "C++.svg"],
   [70, "Symfony", "Symfony.svg"],
   [50, "Python", "Python.svg"],
-  [70, "Angular", "Python.svg"],
+  [70, "Angular", "angular.svg"],
   [70, ".NET", "dotnet.svg"],
   [60, "Django", "django.svg"],
   [40, "Rust", "rust.svg"],
