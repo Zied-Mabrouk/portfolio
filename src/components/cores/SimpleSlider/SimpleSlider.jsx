@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { ImCross } from "react-icons/im";
 import Slider from "react-slick";
 import "./SimpleSlider.scss";
 
@@ -43,9 +42,6 @@ const SimpleSlider = (props) => {
             {props.videos.map((item, key) => {
               return (
                 <div className="mySlider" key={key}>
-                  <span className="cross">
-                    <ImCross />
-                  </span>
                   <video autoPlay={1} muted={true} loop={true}>
                     <source src={item} type="video/mp4" />
                   </video>
@@ -79,9 +75,6 @@ const SimpleSlider = (props) => {
             {galeryPics.map((item, key) => {
               return (
                 <div className="mySlider" key={key}>
-                  <span className="cross">
-                    <ImCross />
-                  </span>
                   <img src={item} alt={key} />
                 </div>
               );
