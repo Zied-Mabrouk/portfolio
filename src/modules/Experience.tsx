@@ -1,62 +1,43 @@
-import ExperienceCard from "../components/ExperienceCard";
+import React, { useMemo } from "react";
+import ExperienceGroup from "../components/ExperienceGroup";
+import { ExperienceType, experiences as exp } from "../utils/experiences";
 
-type Props = {};
+const Experience = () => {
+  const [openExperience, setOpenExperience] = React.useState<number | null>(
+    null
+  );
 
-const Experience = ({}: Props) => {
-  const experiences = [
-    {
-      title: "Software Developer",
-      company: "Société Générale",
-      location: "Tunis, Tunisia",
-      date: "2019 - Present",
-      description: [
-        "Developed and maintained a web application for the bank's internal use.",
-        "Worked on a team to develop a mobile application for the bank's clients.",
-        "Developed and maintained a web application for the bank's internal use.",
-      ],
-    },
-    {
-      title: "Software Developer",
-      company: "Société Générale",
-      location: "Tunis, Tunisia",
-      date: "2019 - Present",
-      description: [
-        "Developed and maintained a web application for the bank's internal use.",
-        "Worked on a team to develop a mobile application for the bank's clients.",
-        "Developed and maintained a web application for the bank's internal use.",
-      ],
-    },
-    {
-      title: "Software Developer",
-      company: "Société Générale",
-      location: "Tunis, Tunisia",
-      date: "2019 - Present",
-      description: [
-        "Developed and maintained a web application for the bank's internal use.",
-        "Worked on a team to develop a mobile application for the bank's clients.",
-        "Developed and maintained a web application for the bank's internal use.",
-      ],
-    },
-    {
-      title: "Software Developer",
-      company: "Société Générale",
-      location: "Tunis, Tunisia",
-      date: "2019 - Present",
-      description: [
-        "Developed and maintained a web application for the bank's internal use.",
-        "Worked on a team to develop a mobile application for the bank's clients.",
-        "Developed and maintained a web application for the bank's internal use.",
-      ],
-    },
-  ];
+  const experiencesGroup = useMemo(() => {
+    return exp.reduce((acc: ExperienceType[][], curr, index) => {
+      if (index % 4 === 0) {
+        acc.push([curr]);
+      } else {
+        acc[acc.length - 1].push(curr);
+      }
+      return acc;
+    }, []);
+  }, []);
 
   return (
     <div className="w-screen h-full flex flex-col text-white py-16 px-16">
       <h1 className="text-5xl mb-4">Experiences</h1>
-      <div className="grid w-full grid-cols-4 gap-4">
-        {experiences.map((experience, index) => (
-          <ExperienceCard key={index} {...experience} />
-        ))}
+      <div className="grid grid-cols-1 gap-4 max-h-[100vh] overflow-hidden">
+        {experiencesGroup.map((group, key) => {
+          return (
+            <ExperienceGroup
+              index={key}
+              key={key}
+              group={group}
+              openExperience={openExperience}
+              isOpen={
+                openExperience !== null &&
+                openExperience >= key * 4 &&
+                openExperience < (key + 1) * 4
+              }
+              setOpenExperience={setOpenExperience}
+            />
+          );
+        })}
       </div>
     </div>
   );

@@ -1,10 +1,8 @@
 import Description from "../components/Description";
 
-type Props = {};
-
-const Home = ({}: Props) => {
+const Home = () => {
   return (
-    <div className="w-screen h-full text-white grid grid-cols-2">
+    <div className="w-[90vw] h-full text-white grid grid-cols-2">
       <div className="flex flex-col h-full justify-center mx-auto">
         <div>
           <div className="mx-auto">

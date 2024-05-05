@@ -8,18 +8,21 @@ function App() {
   const [page, setPage] = React.useState<number>(0);
   const [isScrolling, setIsScrolling] = React.useState<boolean>(false);
 
-  const screenWidth = useMemo(
-    () => window?.innerWidth || 0,
-    [window.innerWidth]
-  );
+  const screenWidth = useMemo(() => window?.innerWidth || 0, []);
   const limit = 2;
 
   const { prevPage, nextPage } = useMemo(() => {
     const prev = () => {
-      setPage((prev) => (prev - 1 + limit) % limit);
+      setPage((prev) => {
+        if (prev === 0) return prev;
+        return prev - 1;
+      });
     };
     const next = () => {
-      setPage((prev) => (prev + 1) % limit);
+      setPage((prev) => {
+        if (prev === limit - 1) return prev;
+        return prev + 1;
+      });
     };
 
     return {
@@ -53,23 +56,29 @@ function App() {
     containerRef.current.addEventListener("wheel", onScroll);
 
     return () => containerRef.current?.removeEventListener("wheel", onScroll);
-  }, [containerRef, isScrolling, nextPage, prevPage]);
+  }, [containerRef, isScrolling, nextPage, prevPage, handleScroll]);
 
   return (
     <div className="bg-primary relative h-screen w-screen" ref={containerRef}>
       <NavBar setPage={setPage} />
-      <Arrow className="left-0" label="prev" onClick={prevPage} />
+
       <div
         className="min-w-[300vw] h-full overflow-y-hidden max-w-fit flex overflow-x-auto"
         style={{
-          transform: `translateX(-${screenWidth * page}px)`,
+          transform: `translateX(-${screenWidth * 0.9 * page}px)`,
           transition: "transform 0.5s ease-in-out",
         }}
       >
         <Home />
         <Experience />
       </div>
-      <Arrow className="right-0" label="next" onClick={nextPage} />
+
+      {page !== 0 && (
+        <Arrow className="left-0" label="prev" onClick={prevPage} />
+      )}
+      {page !== limit - 1 && (
+        <Arrow className="right-0" label="next" onClick={nextPage} />
+      )}
     </div>
   );
 }
