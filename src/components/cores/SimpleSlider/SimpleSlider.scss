@@ -13,14 +13,12 @@
   }
   video,
   img {
-    height: 200px;
     width: 100%;
     border-radius: 45px;
     cursor: pointer;
-  }
-  video {
     height: 100%;
   }
+
   img {
     object-fit: contain;
   }
@@ -61,7 +59,7 @@
     align-items: center;
     justify-content: center;
     img {
-      height: fit-content;
+      height: 100%;
       width: fit-content;
       max-width: 95%;
       max-height: 100vh;
