@@ -1,11 +1,17 @@
-import React, { useMemo } from "react";
+import React, { useEffect, useMemo } from "react";
 import ExperienceGroup from "../components/ExperienceGroup";
 import { ExperienceType, experiences as exp } from "../utils/experiences";
 
-const Experience = () => {
+const Experience = ({ page }: { page: number }) => {
   const [openExperience, setOpenExperience] = React.useState<number | null>(
     null
   );
+
+  useEffect(() => {
+    if (page !== 1) {
+      setOpenExperience(null);
+    }
+  }, [page]);
 
   const experiencesGroup = useMemo(() => {
     return exp.reduce((acc: ExperienceType[][], curr, index) => {
@@ -18,10 +24,38 @@ const Experience = () => {
     }, []);
   }, []);
 
+  const experienceRef = React.useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!experienceRef.current) return;
+
+    const onScroll = (ev: WheelEvent) => {
+      ev.stopPropagation();
+    };
+
+    experienceRef.current.addEventListener("wheel", onScroll);
+
+    return () => experienceRef.current?.removeEventListener("wheel", onScroll);
+  }, [experienceRef]);
   return (
-    <div className="w-screen h-full flex flex-col text-white py-16 px-16">
+    <div
+      ref={experienceRef}
+      onScroll={(e) => {
+        console.log(e);
+        e.preventDefault();
+        e.stopPropagation();
+      }}
+      className="w-screen h-full flex flex-col text-white py-16 px-16 max-h-full overflow-y-auto"
+    >
       <h1 className="text-5xl mb-4">Experiences</h1>
-      <div className="grid grid-cols-1 gap-4 max-h-[100vh] overflow-hidden">
+      <div
+        onScroll={(e) => {
+          console.log(e);
+          e.preventDefault();
+          e.stopPropagation();
+        }}
+        className="grid grid-cols-1 gap-4 max-h-[100vh]"
+      >
         {experiencesGroup.map((group, key) => {
           return (
             <ExperienceGroup

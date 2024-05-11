@@ -4,15 +4,16 @@ import VideoSlider from "./VideoSlider";
 
 type Props = {
   experience: ExperienceType;
+  isOpen: boolean;
 };
 
-const SimpleSlider = ({ experience }: Props) => {
+const SimpleSlider = ({ experience, isOpen }: Props) => {
   const isPhoto = useMemo(() => !!experience.photos, [experience.photos]);
 
   return isPhoto ? (
-    <VideoSlider videos={experience.videos as string[]} />
+    <VideoSlider isOpen={isOpen} videos={experience.videos as string[]} />
   ) : (
-    <VideoSlider videos={experience.videos as string[]} />
+    <VideoSlider isOpen={isOpen} videos={experience.videos as string[]} />
   );
 };
 

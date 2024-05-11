@@ -11,3 +11,18 @@
 body::-webkit-scrollbar {
   display: none;
 }
+
+#root > div::-webkit-scrollbar {
+  display: none;
+}
+
+.slider,
+.slider * {
+  height: 100%;
+}
+
+.slider video {
+  margin-inline: auto;
+  height: 100%;
+  width: 100%;
+}

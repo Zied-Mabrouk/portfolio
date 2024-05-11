@@ -20,13 +20,12 @@ const ExperienceGroup = ({
 }: Props) => {
   const className = useMemo(
     () =>
-      `transition-all duration-[1s] relative overflow-hidden ${
-        isOpen ? "h-[60vh]" : "h-24"
+      `transition-all duration-[1s] overflow-hidden relative ${
+        isOpen ? "h-[80vh]" : "h-24"
       } 
        `,
     [isOpen]
   );
-
   return (
     <div className={className}>
       <div className={`grid w-full grid-cols-4 gap-4 h-24 p-4`}>
@@ -42,9 +41,16 @@ const ExperienceGroup = ({
           />
         ))}
       </div>
+
       {isOpen && openExperience !== null ? (
         <div className="px-4">
-          <OpenExperience experience={group[openExperience - 4 * index]} />
+          {group.map((experience, key) => (
+            <OpenExperience
+              key={key}
+              experience={experience}
+              isOpen={key + 4 * index === openExperience}
+            />
+          ))}
         </div>
       ) : null}
     </div>

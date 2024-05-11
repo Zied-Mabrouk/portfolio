@@ -59,7 +59,10 @@ function App() {
   }, [containerRef, isScrolling, nextPage, prevPage, handleScroll]);
 
   return (
-    <div className="bg-primary relative h-screen w-screen" ref={containerRef}>
+    <div
+      className="bg-primary relative h-screen w-screen overflow-y-hidden max-h-[100vh]"
+      ref={containerRef}
+    >
       <NavBar setPage={setPage} />
 
       <div
@@ -70,7 +73,7 @@ function App() {
         }}
       >
         <Home />
-        <Experience />
+        <Experience page={page} />
       </div>
 
       {page !== 0 && (

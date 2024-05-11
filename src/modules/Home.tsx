@@ -18,7 +18,7 @@ const Home = () => {
       </div>
       <div className="pt-44">
         <img
-          src="public/avatar.png"
+          src="avatar.png"
           alt="avatar"
           className="w-80 h-80 rounded-full border-secondary border bg-primary-light bg-opacity-50 mx-auto -scale-x-100"
         />
