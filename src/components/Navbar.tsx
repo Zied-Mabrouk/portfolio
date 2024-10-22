@@ -4,7 +4,7 @@ import data from '../../data';
 const Navbar = () => {
   const items = useMemo(() => data.navbar.items, []);
   return (
-    <nav className="fixed z-10 top-0 left-0 w-full py-4 bg-white bg-opacity-10 backdrop-blur-md">
+    <nav className="fixed z-30 top-0 left-0 w-full py-4 bg-white bg-opacity-10 backdrop-blur-md">
       <div className="flex max-w-7xl items-center mx-auto justify-between">
         <a href="#home" className="text-lg">
           <span className="tracking-wider">zied</span>

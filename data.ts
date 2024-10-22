@@ -80,14 +80,14 @@ const data = {
         className: 'text-accent2',
         href: '#experience',
       },
-      {
-        label: 'certificates',
-        className: 'text-accent3',
-        href: '#certificates',
-      },
+      //   {
+      //     label: 'certificates',
+      //     className: 'text-accent3',
+      //     href: '#certificates',
+      //   },
       {
         label: 'contact me',
-        className: 'text-accent4',
+        className: 'text-accent3',
         href: '#contact',
       },
     ],

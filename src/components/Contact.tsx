@@ -7,8 +7,8 @@ const Contact = () => {
   return (
     <div id="contact" className="py-8">
       <div className="flex items-center gap-8 pb-4">
-        <div className="text-accent4 text-3xl">04.</div>
-        <h2 className="text-3xl font-medium tracking-wider">Contact</h2>
+        <div className="text-accent3 text-3xl">03.</div>
+        <h2 className="text-3xl font-medium tracking-wider pb-4">Contact</h2>
       </div>
 
       <div className="w-full grid grid-cols-4 justify-center items-center gap-16 px-16">

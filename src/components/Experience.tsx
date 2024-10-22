@@ -8,7 +8,7 @@ const Experience = () => {
     <div id="experience" className="py-8">
       <div className="flex items-center gap-8 pb-4">
         <div className="text-accent2 text-3xl">02.</div>
-        <h2 className="text-3xl font-medium tracking-wider">Experience</h2>
+        <h2 className="text-3xl font-medium tracking-wider pb-4">Experience</h2>
       </div>
 
       <div className="w-full grid grid-cols-3 justify-center items-center gap-8">

@@ -14,8 +14,8 @@ const Card = ({ experience, accent: comingAccent }: Props) => {
   );
 
   return (
-    <div className="relative flex flex-col justify-between h-56 pt-4 pb-2 overflow-hidden rounded-lg text-black px-4 group">
-      <div className="blur-[100px] bg-gray-200 bg-opacity-80 absolute w-full h-full top-0 left-0 -z-10 group-hover:z-10 group-hover:blur-sm">
+    <div className="relative flex flex-col justify-between h-56 pt-4 pb-2 overflow-hidden rounded-lg text-white px-4 group">
+      <div className="blur-[100px] bg-gray-200 hidden bg-opacity-80 absolute w-full h-full top-0 left-0 -z-10 group-hover:z-10 group-hover:blur-sm group-hover:flex">
         <Image
           src={experience.image}
           alt=""
@@ -35,7 +35,7 @@ const Card = ({ experience, accent: comingAccent }: Props) => {
             </span>
           </div>
           <div className="flex justify-between">
-            <span className="font-medium text-lg leading-none text-gray-900">
+            <span className="font-medium text-lg leading-none text-gray-200">
               <span className={`${accent} text-2xl`}>
                 {experience.company.charAt(0).toUpperCase()}
               </span>
@@ -46,7 +46,7 @@ const Card = ({ experience, accent: comingAccent }: Props) => {
             </span>
           </div>
         </div>
-        <ul className="pl-4 pb-4 text-gray-950">
+        <ul className="pl-4 pb-4 text-gray-350">
           {experience.tasks.map((task, index) => (
             <li key={index} className="list-disc py-1 text-justify">
               {task}
@@ -57,7 +57,7 @@ const Card = ({ experience, accent: comingAccent }: Props) => {
       <a
         href={experience.link}
         target="_blank"
-        className="ml-auto flex justify-end underline underline-offset-2 font-semibold text-sm text-gray-900 group-hover:z-20 relative"
+        className="ml-auto flex justify-end underline underline-offset-2 font-semibold text-sm group-hover:text-gray-950 group-hover:z-20 relative"
       >
         Check it Out {'>'}
       </a>
