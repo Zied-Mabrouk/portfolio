@@ -310,15 +310,24 @@
     "list": [
       {
         "id": 12,
+        "title": "French language proficiency test",
+        "subtitle": "Alliance française",
+        "text": " ",
+        "timeStart": "Août 30, 2023",
+        "timeEnd": "Août 29, 2025",
+        "photos": ["./assets/img/certifications/tcf.png"]
+      },
+      {
+        "id": 13,
         "title": "Project Management & Pitching",
         "subtitle": "Rotaract La Marsa Carthage",
         "text": "During the Racathon which is a Hackathon hosted by Rotaract La Marsa Carthage, we developed ideas about how to save water and started designing a mobile application for that purpose.This event lasted 24 hours so it was exhausting and fun at the same time.",
-        "timeStart": "Mar 19, 2022",
+        "timeStart": "Mar 20, 2022",
         "timeEnd": "Mar 20, 2022",
         "photos": ["./assets/img/certifications/racathon.png"]
       },
       {
-        "id": 13,
+        "id": 14,
         "title": "Sponsoring & Negotiation Technics",
         "subtitle": "Rotaract NotreDame Connect",
         "text": "In this occasion I learned how to negotiate with the people at the top of the hierarchy to settle a sponsorship or any deal and how to be prepared mentally and physically for the tough situation I may encounter.",
