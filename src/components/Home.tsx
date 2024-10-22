@@ -4,7 +4,7 @@ import Table from './Table';
 const Home = () => {
   return (
     <div id="home" className="h-[70vh] flex justify-center items-center">
-      <div className="w-2/3 h-full p-4 flex flex-col justify-center gap-8">
+      <div className="w-2/3 h-full pr-4 py-4 flex flex-col justify-center gap-8">
         <h1 className="text-7xl font-semibold">
           I<span className="text-accent2 italic tracking-widest">&apos;</span>m
           Zied Mabrouk
@@ -17,6 +17,12 @@ const Home = () => {
         <p className="text-gray-400 text-lg">
           The world is better with my code in it.
         </p>
+        <a
+          href="#contact"
+          className="btn ml-auto cursor-pointer tracking-wider uppercase transition-all hover:-translate-y-1"
+        >
+          Contact me
+        </a>
       </div>
       <Table className="w-1/3 mx-16">
         <div className="py-8 px-12 flex">

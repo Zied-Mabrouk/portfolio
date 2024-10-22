@@ -1,9 +1,10 @@
 import React, { useMemo } from 'react';
 import Table from './Table';
-import about from '../../about';
+import Image from 'next/image';
+import data from '../../data';
 
 const About = () => {
-  const descriptions = useMemo(() => about.description.split('##'), []);
+  const descriptions = useMemo(() => data.about.description.split('##'), []);
   return (
     <div className="flex w-full gap-8" id="about">
       <div className="text-accent1 text-3xl">01.</div>
@@ -16,8 +17,17 @@ const About = () => {
             </p>
           ))}
         </div>
-        <div className="flex w-1/3 justify-center items-center">
-          <Table>hey</Table>
+        <div className="flex w-1/3 mx-12 justify-center items-center">
+          <Table className="w-full">
+            <div className="relative aspect-square">
+              <Image
+                src="/me.jpg"
+                alt=""
+                layout="fill"
+                className="object-cover"
+              />
+            </div>
+          </Table>
         </div>
       </div>
     </div>

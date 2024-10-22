@@ -8,7 +8,7 @@ type Props = {
 const Table = ({ children, className: incomingClassName = '' }: Props) => {
   const className = useMemo(
     () =>
-      `border border-white flex flex-col rounded-lg h-fit ${incomingClassName}`,
+      `border border-white flex flex-col rounded-lg h-fit overflow-hidden ${incomingClassName}`,
     [incomingClassName],
   );
   return (
