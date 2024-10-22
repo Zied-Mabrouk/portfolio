@@ -6,13 +6,25 @@
     "list": [
       {
         "id": 7,
-        "title": "Software Engineer Intern",
-        "href": "https://www.ruedesvignerons.com/",
-        "subtitle": "Rue des Vignerons",
-        "text": "I was offered an internship in France as an end-of-study project.",
-        "technologies": ["NextJS", "ReactJS", "TailwindCSS", "Jest", "DevOps"],
-        "timeStart": "Jan, 2024",
-        "timeEnd": "Now"
+        "title": "Senior Software Engineer",
+        "href": "https://www.datawisp.io/",
+        "subtitle": "Datawisp",
+        "text": "Datawisp is a no-code data platform that allows users to ask questions in natural language and receive answers instantly, without needing technical skills. It connects directly to your database for fast and secure query execution. The platform supports real-time collaboration, data visualization, and persistent dashboards. It’s designed to empower non-technical users to make data-driven decisions while freeing data scientists to focus on more complex tasks.",
+        "technologies": [
+          "React JS",
+          "Typescript",
+          "Rust",
+          "Prisma",
+          "GraphQL",
+          "HTML/CSS",
+          "AI"
+        ],
+        "timeStart": "Jun, 2023",
+        "timeEnd": "Jun, 2024",
+        "photos": [
+          "./assets/img/projects/datawisp/1.png",
+          "./assets/img/projects/datawisp/2.png"
+        ]
       },
       {
         "id": 6,
@@ -23,24 +35,40 @@
         "technologies": [
           "NextJS",
           "ReactJS",
+          "Typescript",
           "Express",
           "MongoDB",
           "TailwindCSS",
-          "Rust",
+          "Python",
           "Django",
           "AWS S3",
           "Jest",
           "DevOps",
           "graphql",
-          "Prisma"
+          "Prisma",
+          "Devops",
+          "PostgreSQL",
+          "HTML/CSS",
+          "Scrum"
         ],
         "timeStart": "Feb, 2023",
-        "timeEnd": "Jan, 2024",
+        "timeEnd": "Jun, 2023",
         "photos": [
           "./assets/img/projects/unotes/1.png",
           "./assets/img/projects/unotes/2.png",
           "./assets/img/projects/unotes/3.png"
         ]
+      },
+      {
+        "id": 12,
+        "title": "Web Developer",
+        "href": "https://www.chateaudemontargis.fr/",
+        "subtitle": "Château de Montargis",
+        "text": "While working with DAH Studio, I had the great opportunity to take in charge their best client Château de Montargis.",
+        "technologies": ["Symfony", "PHP", "MySQL", "KRpano"],
+        "timeStart": "Jul, 2022",
+        "timeEnd": "Oct, 2023",
+        "videos": ["./assets/img/projects/dah/vr.mp4"]
       },
       {
         "id": 5,
@@ -66,17 +94,7 @@
           "./assets/img/projects/dah/5.png"
         ]
       },
-      {
-        "id": 12,
-        "title": "Web Developer",
-        "href": "https://www.chateaudemontargis.fr/",
-        "subtitle": "Château de Montargis",
-        "text": "While working with DAH Studio, I had the great opportunity to take in charge their best client Château de Montargis.",
-        "technologies": ["Symfony", "PHP", "MySQL", "KRpano"],
-        "timeStart": "Jul, 2022",
-        "timeEnd": "Oct, 2023",
-        "videos": ["./assets/img/projects/dah/vr.mp4"]
-      },
+
       {
         "id": 3,
         "title": "Web Developer",

@@ -1,18 +1,18 @@
-import React from "react";
-import { AiFillLinkedin } from "react-icons/ai";
-import { FaGithub, FaPhone } from "react-icons/fa";
-import { HiMail } from "react-icons/hi";
-import "./Contact.scss";
+import React from 'react';
+import { AiFillLinkedin } from 'react-icons/ai';
+import { FaGithub, FaPhone } from 'react-icons/fa';
+import { HiMail } from 'react-icons/hi';
+import './Contact.scss';
 
 const Contact = () => {
   return (
     <div className="contact" id="contact">
       <div className="contact-content">
         <div>
-          <a href="tel:+330695016276">
+          <a href="tel:+33695016276">
             <FaPhone />
           </a>
-          <a href="tel:+330695016276">+33 06 95 01 62 76</a>
+          <a href="tel:+33695016276">+33 6 95 01 62 76</a>
         </div>
         <div>
           <a

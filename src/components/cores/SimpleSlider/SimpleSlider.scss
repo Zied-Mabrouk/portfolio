@@ -23,10 +23,17 @@
     object-fit: contain;
   }
 }
+.slick-track {
+  display: flex;
+  align-items: center;
+}
 .slick-arrow {
   background-color: var(--color-bg) !important;
   border-radius: 50%;
   opacity: 1 !important;
+}
+.galery .slick-arrow {
+  background: transparent !important;
 }
 .slick-next:before,
 .slick-prev:before {
