@@ -5,13 +5,25 @@ import 'react-multi-carousel/lib/styles.css';
 const Carousel = () => {
   const images = useMemo(
     () => [
-      { img: 'datawisp.png', link: 'https://datawisp.io' },
-      { img: 'devino.png', link: 'https://devino.ca' },
-      { img: 'dah.webp', link: 'https://dah-zied-mabrouk.vercel.app' },
-      { img: 'montargis.png', link: 'https://chateaudemontargis.fr' },
-      { img: 'tcb.webp', link: 'https://tcb.tn' },
-      { img: 'etravsub.png', link: 'https://etravsub.com' },
-      { img: 'vaporia.jpg', link: 'https://vaporia.vercel.app' },
+      { img: 'datawisp.png', link: 'https://datawisp.io', name: 'Datawisp' },
+      { img: 'devino.png', link: 'https://devino.ca', name: 'Devino' },
+      {
+        img: 'dah.webp',
+        link: 'https://dah-zied-mabrouk.vercel.app',
+        name: 'DAH Studio',
+      },
+      {
+        img: 'montargis.png',
+        link: 'https://chateaudemontargis.fr',
+        name: 'Château de Montargis',
+      },
+      { img: 'tcb.webp', link: 'https://tcb.tn', name: 'TCB' },
+      { img: 'etravsub.png', link: 'https://etravsub.com', name: 'Etrasub' },
+      {
+        img: 'vaporia.jpg',
+        link: 'https://vaporia.vercel.app',
+        name: 'Vaporia',
+      },
     ],
     [],
   );
@@ -57,6 +69,7 @@ const Carousel = () => {
           href={image.link}
           target="_blank"
           rel="noreferrer"
+          title={image.name}
         >
           <img
             className="h-full grayscale hover:grayscale-0 object-contain rounded-lg"
