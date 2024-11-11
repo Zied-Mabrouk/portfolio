@@ -4,6 +4,7 @@ type ExperienceType = {
   position: string;
   company: string;
   intervalDate: string;
+  place: string;
   tasks: string[];
 };
 
@@ -24,7 +25,7 @@ const Card = ({ experience }: Props) => {
         <span className="capitalize text-sm font-semibold">
           {experience.company}
         </span>
-        <span className="text-sm text-gray-400"> {experience.position}</span>
+        <span className="text-sm text-gray-400"> {experience.place}</span>
       </div>
       <div className="pt-4 flex flex-col gap-1">
         {experience.tasks.map((task, index) => (
