@@ -25,26 +25,26 @@ const Carousel = () => {
       autoPlay
       centerMode
       shouldResetAutoplay
-      customTransition="all 5s linear"
+      customTransition="all 8s linear"
       pauseOnHover={false}
       rewindWithAnimation={false}
       responsive={{
         superLargeDesktop: {
           // the naming can be any, depends on you.
           breakpoint: { max: 4000, min: 3000 },
-          items: 5,
+          items: 6,
         },
         desktop: {
           breakpoint: { max: 3000, min: 1024 },
-          items: 3,
+          items: 5,
         },
         tablet: {
           breakpoint: { max: 1024, min: 464 },
-          items: 2,
+          items: 3,
         },
         mobile: {
           breakpoint: { max: 464, min: 0 },
-          items: 1,
+          items: 2,
         },
       }}
       transitionDuration={1000}
@@ -52,7 +52,7 @@ const Carousel = () => {
     >
       {images.map((image, index) => (
         <a
-          className="flex items-center justify-center h-full overflow-hidden py-8 max-w-60"
+          className="flex items-center justify-center h-full overflow-hidden py-16 max-w-20 sm:max-w-40"
           key={index}
           href={image.link}
           target="_blank"
