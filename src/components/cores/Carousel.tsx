@@ -5,6 +5,11 @@ import 'react-multi-carousel/lib/styles.css';
 const Carousel = () => {
   const images = useMemo(
     () => [
+      {
+        img: 'rdv.png',
+        link: 'https://www.ruedesvignerons.com/',
+        name: 'Rue des Vignerons',
+      },
       { img: 'datawisp.png', link: 'https://datawisp.io', name: 'Datawisp' },
       { img: 'devino.png', link: 'https://devino.ca', name: 'Devino' },
       {
