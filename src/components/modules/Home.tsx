@@ -9,11 +9,11 @@ const Home = () => {
         <NavBar />
         <div className="flex flex-col w-[600px] px-4">
           <img
-            className="rounded-full w-48 mx-auto grayscale border-4 border-white hover:grayscale-0"
+            className="rounded-full w-36 sm:w-48 mx-auto grayscale border-4 border-white hover:grayscale-0"
             src="/img/me.png"
             alt=""
           />
-          <h1 className="linear-gradient text-center text-6xl tracking-tight leading-tight font-bold">
+          <h1 className="linear-gradient text-center text-4xl sm:text-6xl tracking-tight leading-tight font-bold">
             Building digital products, brands, and experience.
           </h1>
         </div>
