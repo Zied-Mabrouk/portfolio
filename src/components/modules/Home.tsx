@@ -4,8 +4,8 @@ import Carousel from '../cores/Carousel';
 
 const Home = () => {
   return (
-    <div className="h-[110vh] bg-white rounded-t-none rounded-[120px] border overflow-hidden">
-      <div className="h-5/6 rounded-b-[120px] w-full -mt-16 pt-16 border-b bg-primary flex items-center justify-center">
+    <div className="h-[110vh] bg-white rounded-t-none rounded-[50px] sm:rounded-[120px] border overflow-hidden">
+      <div className="h-5/6 rounded-b-[50px] sm:rounded-b-[120px] w-full -mt-16 pt-16 border-b bg-primary flex items-center justify-center">
         <NavBar />
         <div className="flex flex-col w-[600px] px-4">
           <img
