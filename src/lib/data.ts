@@ -1,5 +1,15 @@
 const ExperienceData = [
   {
+    position: 'Fullstack Software Engineer',
+    company: 'As Solutions',
+    intervalDate: 'Dec 2024 – Now',
+    place: 'Paris, France (remote)',
+    tasks: [
+      'Design and development of an insurance premium calculator based on customer data and specific criteria.',
+      'Implementation of management modules for tracking quotes, contracts and prospects, enabling processes to be automated and simplified.',
+    ],
+  },
+  {
     position: 'Front-End Software Engineer',
     company: 'Rue des Vignerons',
     intervalDate: 'Jan 2024 – Jul 2024',
